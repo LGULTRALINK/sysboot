@@ -14,7 +14,7 @@ LODS [EBH], LODSB [0000 0101]; Enquiry
 LODS [EBH], LODSB [0000 0110]; Acknowledge
 LODS [EBH], LODSB [0000 0111]; Bell
 LODS [EBH], LODSB [0000 1000]; BackSpace
-IRET [ECX], MOVSW "space for code";
+IRET [DW], MOVSW "data writing";
 LODS [ESP], LODSB [0000 1001]; Horizontal Tabulation
 LODS [ESP], LODSB [0000 1010]; Line Feed
 LODS [ESP], LODSB [0000 1011]; Vertical Tabulation
@@ -29,7 +29,7 @@ LODS [ESI], MOVSB [0001 0001]; Device Control 1
 LODS [ESI], MOVSB [0001 0010]; Device Control 2
 LODS [ESI], MOVSB [0001 0011]; Device Control 3
 LODS [ESI], MOVSB [0001 0100]; Device Control 4
-IRET [ESS], MOVSW "source stack space";
+IRET [ECX], MOVSW "space for code";
 STOS [EDI], MOVSB [0001 0101]; Negative Acknowledge
 STOS [EDI], MOVSB [0001 0110]; Synchronous Idle
 STOS [EDI], MOVSB [0001 0111]; End of Transmission Block
