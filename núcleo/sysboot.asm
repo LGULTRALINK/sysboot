@@ -30,6 +30,6 @@ MOV [ES], MOVSB [0001 0010]; Device Control 3
 MOV [ES], MOVSB [0001 0011]; Device Control 4
 MOVS [ESP], MOVSW "stack source space";
 MOV [SS], MOVSB [0001 0101]; Negative Acknowledge
-MOV [SS], MOVSB [0001 0110]; Synchronous
+MOV [SS], MOVSB [0001 0110]; Synchronous Idle
 MOV [SS], MOVSB [0001 0111]; End of Transmission Block
 MOV [SS], MOVSB [0001 1000]; Cancel
