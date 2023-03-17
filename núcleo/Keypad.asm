@@ -1,4 +1,4 @@
-CALL "ignition switch signal"
+CALL IN "ignition switch signal"
 TEST "Power-Up Display Successfully"
 RET "Standby Display"
 CPU "is in protected mode"
