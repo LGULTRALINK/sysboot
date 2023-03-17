@@ -24,12 +24,12 @@ MOV [CS], MOVSB [0000 1110]; Shift Out
 MOV [CS], MOVSB [0000 1111]; Shift In
 MOV [CS], MOVSB [0001 0000]; Data Link Escape
 MOVS [EBP], MOVSW "stack base space";
-MOV [IP], MOVSB [0001 0000]; Device Control 1
-MOV [IP], MOVSB [0001 0001]; Device Control 2
-MOV [IP], MOVSB [0001 0010]; Device Control 3
-MOV [IP], MOVSB [0001 0011]; Device Control 4
+MOV [ES], MOVSB [0001 0000]; Device Control 1
+MOV [ES], MOVSB [0001 0001]; Device Control 2
+MOV [ES], MOVSB [0001 0010]; Device Control 3
+MOV [ES], MOVSB [0001 0011]; Device Control 4
 MOVS [ESP], MOVSW "stack source space";
-MOV [BL], MOVSB [0001 0101]; Negative Acknowledge
-MOV [BL], MOVSB [0001 0110]; Synchronous
-MOV [BL], MOVSB [0001 0111]; End of Transmission Block
-MOV [BL], MOVSB [0001 1000]; Cancel
+MOV [SS], MOVSB [0001 0101]; Negative Acknowledge
+MOV [SS], MOVSB [0001 0110]; Synchronous
+MOV [SS], MOVSB [0001 0111]; End of Transmission Block
+MOV [SS], MOVSB [0001 1000]; Cancel
