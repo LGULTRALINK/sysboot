@@ -1,3 +1,4 @@
+NOP "idle Chipset On System Board"
 CALL "ignition switch signal"
 TEST "Power-Up Display Successfully"
 RET "Standby Display"
