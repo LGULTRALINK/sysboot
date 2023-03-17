@@ -1,4 +1,4 @@
-#include "checksum"
+#include "checkin by num of sum" 
 :	EQU	[0 + 0 = $00]; value of zero
 :	EQU	[0 + 1 = $10]; value of ten
 :	EQU	[0 + 2 = $20]; value of twenty
