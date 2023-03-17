@@ -1,0 +1,9 @@
+:	SP	[9 << 1 = 512];  bits
+:	SP	[9 << 2 = 1024]; kilo-bits
+:	SP	[9 << 3 = 1536]; Mega-bits
+:	SP	[9 << 4 = 2048]; Giga-bits
+:	SP	[9 << 5 = 2560]; Tera-bits
+:	SP	[9 << 6 = 3072]; Peta-bits
+:	SP	[9 << 7 = 3584]; Exa-bits
+:	SP	[9 << 8 = 4096]; Zetta-bits
+:	SP	[9 << 9 = 4608]; Yotta-bits
