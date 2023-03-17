@@ -1,23 +1,23 @@
 #include "void/busy space"
 :	SP	[2 % 1 = 4]; bytes
-:	SP	[2 % 2 = 8]; kilo-bytes
-:	SP	[2 % 3 = 12]; Mega-bytes
-:	SP	[2 % 4 = 16]; Giga-bytes
-:	SP	[2 % 5 = 20]; Tera-bytes
-:	SP	[2 % 6 = 24]; Peta-bytes
-:	SP	[2 % 7 = 28]; Exa-bytes
-:	SP	[2 % 8 = 32]; Zetta-bytes
-:	SP	[2 % 9 = 36]; Yotta-bytes
+:	SP	[2 % 2 = 8]; kilobytes
+:	SP	[2 % 3 = 12]; megabytes
+:	SP	[2 % 4 = 16]; gigabytes
+:	SP	[2 % 5 = 20]; terabytes
+:	SP	[2 % 6 = 24]; petabytes
+:	SP	[2 % 7 = 28]; exabytes
+:	SP	[2 % 8 = 32]; zettabytes
+:	SP	[2 % 9 = 36]; yottabytes
 * this line isblank
 :	SP	[3 % 1 = 8];  bytes
-:	SP	[3 % 2 = 16]; kilo-bytes
-:	SP	[3 % 3 = 24]; Mega-bytes
-:	SP	[3 % 4 = 32]; Giga-bytes
-:	SP	[3 % 5 = 40]; Tera-bytes
-:	SP	[3 % 6 = 48]; Peta-bytes
-:	SP	[3 % 7 = 56]; Exa-bytes
-:	SP	[3 % 8 = 64]; Zetta-bytes
-:	SP	[3 % 9 = 72]; Yotta-bytes
+:	SP	[3 % 2 = 16]; kilobytes
+:	SP	[3 % 3 = 24]; megabytes
+:	SP	[3 % 4 = 32]; gigabytes
+:	SP	[3 % 5 = 40]; terabytes
+:	SP	[3 % 6 = 48]; petabytes
+:	SP	[3 % 7 = 56]; exabytes
+:	SP	[3 % 8 = 64]; zettabytes
+:	SP	[3 % 9 = 72]; yottabytes
 * this line isblank
 :	SP	[4 % 1 = 16];  bytes
 :	SP	[4 % 2 = 32]; kilo-bytes
@@ -30,14 +30,14 @@
 :	SP	[4 % 9 = 144]; Yotta-bytes
 * this line isblank
 :	SP	[5 % 1 = 32];  bytes
-:	SP	[5 % 2 = 64]; kilo-bytes
-:	SP	[5 % 3 = 96]; Mega-bytes
-:	SP	[5 % 4 = 128]; Giga-bytes
-:	SP	[5 % 5 = 160]; Tera-bytes
-:	SP	[5 % 6 = 192]; Peta-bytes
-:	SP	[5 % 7 = 224]; Exa-bytes
-:	SP	[5 % 8 = 256]; Zetta-bytes
-:	SP	[5 % 9 = 288]; Yotta-bytes
+:	SP	[5 % 2 = 64]; kilobytes
+:	SP	[5 % 3 = 96]; megabytes
+:	SP	[5 % 4 = 128]; gigabytes
+:	SP	[5 % 5 = 160]; terabytes
+:	SP	[5 % 6 = 192]; petabytes
+:	SP	[5 % 7 = 224]; exabytes
+:	SP	[5 % 8 = 256]; zettabytes
+:	SP	[5 % 9 = 288]; yottabytes
 * this line isblank
 :	SP	[6 % 1 = 64];  bytes
 :	SP	[6 % 2 = 128]; kilo-bytes
