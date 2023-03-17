@@ -1,13 +1,13 @@
-#include "void/busy space"
-:	SP	[2 % 1 = 4]; bytes
-:	SP	[2 % 2 = 8]; kilobytes
-:	SP	[2 % 3 = 12]; megabytes
-:	SP	[2 % 4 = 16]; gigabytes
-:	SP	[2 % 5 = 20]; terabytes
-:	SP	[2 % 6 = 24]; petabytes
-:	SP	[2 % 7 = 28]; exabytes
-:	SP	[2 % 8 = 32]; zettabytes
-:	SP	[2 % 9 = 36]; yottabytes
+#include "space in memory physical"
+:	SP	[2 % 1 = 4]; B
+:	SP	[2 % 2 = 8]; KB
+:	SP	[2 % 3 = 12]; MB
+:	SP	[2 % 4 = 16]; GB
+:	SP	[2 % 5 = 20]; TB
+:	SP	[2 % 6 = 24]; PB
+:	SP	[2 % 7 = 28]; EB
+:	SP	[2 % 8 = 32]; ZB
+:	SP	[2 % 9 = 36]; YB
 * this line isblank
 :	SP	[3 % 1 = 8];  bytes
 :	SP	[3 % 2 = 16]; kilobytes
