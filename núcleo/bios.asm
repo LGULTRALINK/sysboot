@@ -8,7 +8,7 @@ WORD	: Binary Input Output System	; Machine Language
 * MUL [2 × 4 = 8]: IN [SP] / OUT [BP]; put space / put base
 * MUL [2 × 5 = 10]: IN [AX] / OUT [BX]; access (? unknown) / base (? unknown)
 * MUL [2 × 6 = 12]: IN [DX] / OUT [CX]; code (? unknown) / data (? unknown)
-* MUL [2 × 7 = 14]: IN [EAB] / OUT [EAH]; high groundspace / high space access
+* MUL [2 × 7 = 14]: IN [EBH] / OUT [EAH]; high base space / high access space
 * MUL [2 × 8 = 16]: IN [AH] / OUT [AL]; high access / low access
 * MUL [2 × 9 = 18]: IN [BH] / OUT [BL]; high base / low base
 BYTE	: INT [0000 0000], PUSH '␀'; Null
