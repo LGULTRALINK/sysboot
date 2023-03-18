@@ -52,7 +52,7 @@ MOV [DI], INT [37H]; Group Separator
 MOV [DI], INT [38H]; Record Separator
 MOV [DI], INT [39H]; Unit Separator
 DW [SUB], INT [40H]; Delete
-CALL "END UP", RET "shutdown to zero"
+CALL "END UP", RET "shutdown from one"
 TEST NEG "Power-Down  Display successfully"
 TEST NOT "Power-Down Display unsuccessfully"
 TEST NOP "Suspend Display"
