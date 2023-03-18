@@ -41,11 +41,11 @@ BYTE : IN/OUT [0010 0110], PUSH '&'; Ampersand Mark
 BYTE : IN/OUT [0010 0111], PUSH '‚'; Apostrophe Mark
 BYTE : IN/OUT [0010 1000], PUSH '('; Openure Round Bracket
 BYTE : IN/OUT [0010 1001], PUSH ')'; Closure Round Bracket
-BYTE : IN/OUT [0010 1010], PUSH '×'; Mark Multipication
+BYTE : IN/OUT [0010 1010], PUSH '×'; Mark Per
 BYTE : IN/OUT [0010 1011], PUSH '+'; Mark More
 BYTE : IN/OUT [0010 1100], PUSH '-'; Mark Minus
 BYTE : IN/OUT [0010 1101], PUSH '='; Mark Equal
-BYTE : IN/OUT [0010 1110], PUSH '÷'; Mark Divition
+BYTE : IN/OUT [0010 1110], PUSH '÷'; Mark Div
 BYTE : IN/OUT [0010 1111], PUSH '±'; Mark More or Minus
 BYTE : IN/OUT [0011 0000], PUSH '0'; Zero
 BYTE : IN/OUT [0011 0001], PUSH '1'; One
