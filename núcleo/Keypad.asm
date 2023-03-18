@@ -1,4 +1,4 @@
-CALL IN  "switch signal to turn on"
+IN CALL  "switch signal to turn on"
 TEST AND "Power-Up Display successfully"
 TEST OR "Power-Up Display unsuccessfully"
 OUT CALL "Standby Display"
@@ -53,9 +53,9 @@ MOV [BH],[BL], MOVSB [1000 1000]; Reverse Line Feed
 MOV [BH],[BL], MOVSB [1000 1001]; Partial Line Foreward
 MOV [BH],[BL], MOVSB [1000 1010]; Partial Line Backward
 MOV [BH],[BL], MOVSB [1000 1011]; Set Transmit State
-CALL IN "signal switch to turn off"
+IN CALL "signal switch to turn off"
 TEST NEG "Power-Down  Display successfully"
 TEST NOT "Power-Down Display unsuccessfully"
 OUT CALL "Suspend Display"
 RET "idle Permitted Here"
-DO NOP
+DO NOP "it is out of order"
