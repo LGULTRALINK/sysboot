@@ -1,5 +1,5 @@
 WORD	: Binary Input Output System	; Machine Language
- @ECHO IP = 00000000-0000-0000-0000-000000000046
+ 》MOV IP = 00000000-0000-0000-0000-000000000046
 * MUL [2 × 0 = 0]: NOT IN / NOT OUT  ; NULL
 * MUL [2 × 1 = 2]: IN [SS] / OUT [ES]; stack source / stack space
 * MUL [2 × 2 = 4]: IN [CS] / OUT [DS]; code segment / data segment
