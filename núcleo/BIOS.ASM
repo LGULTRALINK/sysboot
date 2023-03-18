@@ -34,3 +34,11 @@ BYTE	: INT [0001 1111], PUSH '␟'; Unit Separator
 BYTE	: INT [0111 1111], PUSH '␡'; Delete
 DO LOCK  [ON]; with in lock
 DO NOT LOCK [OFF]; with out lock
+IN/OUT [0AH]: TEST AND/OR; high access
+IN/OUT [0BH]: TEST AND/OR; high base
+IN/OUT [0CH]: TEST AND/OR; high code
+IN/OUT [0DH]: TEST AND/OR; high data
+IN/OUT [0EH]: TEST AND/OR; high space
+IN/OUT [0FH]: TEST AND/OR; high file
+IN/OUT [ESP]; TEST AND/OR; put stack space
+IN/OUT [EBP], TEST AND/OR; put base space
