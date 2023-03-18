@@ -1,7 +1,7 @@
 CALL IN  "switch signal to turn on"
 TEST AND "Power-Up Display successfully"
 TEST OR "Power-Up Display unsuccessfully"
-CALL OUT "Standby Display"
+DO OUT  "Standby Display"
 RET "Micro chip Preset"
 MOVS [EAX], MOVSW "space access";
 NOP [AX],[DX], MOVSB [0000 0000]; Null
@@ -56,5 +56,5 @@ MOV [BH],[BL], MOVSB [1000 1011]; Set Transmit State
 CALL IN "signal switch to turn off"
 TEST NEG "Power-Down  Display successfully"
 TEST NOT "Power-Down Display unsuccessfully"
-CALL OUT "Suspend Display"
+DO OUT "Suspend Display"
 RET "idle Permitted Here"
