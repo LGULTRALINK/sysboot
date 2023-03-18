@@ -1,14 +1,14 @@
 WORD	: Binary Input Output System	; Machine Language
-* MUL [2 × 0 = 0]: NOT IN / NOT OUT  ;
-* MUL [2 × 1 = 2]: IN [SS] / OUT [ES];
-* MUL [2 × 2 = 4]: IN [CS] / OUT [DS];
-* MUL [2 × 3 = 6]: IN [SI] / OUT [DI];
-* MUL [2 × 4 = 8]: IN [SP] / OUT [BP];
-* MUL [2 × 5 = 10]: IN [AX] / OUT [BX];
-* MUL [2 × 6 = 12]: IN [DX] / OUT [CX];
-* MUL [2 × 7 = 14]: IN [IP] / OUT [IP];
-* MUL [2 × 8 = 16]: IN [AH] / OUT [AL];
-* MUL [2 × 9 = 18]: IN [BH] / OUT [BL];
+* MUL [2 × 0 = 0]: NOT IN / NOT OUT  ; NULL
+* MUL [2 × 1 = 2]: IN [SS] / OUT [ES]; stack source / stack space
+* MUL [2 × 2 = 4]: IN [CS] / OUT [DS]; code segment / data segment
+* MUL [2 × 3 = 6]: IN [SI] / OUT [DI]; source index / destination index
+* MUL [2 × 4 = 8]: IN [SP] / OUT [BP]; put space / put base
+* MUL [2 × 5 = 10]: IN [AX] / OUT [BX]; access (? unknown) / base (? unknown)
+* MUL [2 × 6 = 12]: IN [DX] / OUT [CX]; code (? unknown) / data (? unknown)
+* MUL [2 × 7 = 14]: IN [IP] / OUT [IP]; program index
+* MUL [2 × 8 = 16]: IN [AH] / OUT [AL]; high access / low access
+* MUL [2 × 9 = 18]: IN [BH] / OUT [BL]; high base / low base
 BYTE	: INT [0000 0000], PUSH '␀'; Null
 BYTE	: INT [0000 0001], PUSH '␁'; Start of Header
 BYTE	: INT [0000 0010], PUSH '␂'; Start of Text
