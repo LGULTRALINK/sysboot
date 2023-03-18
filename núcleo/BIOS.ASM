@@ -32,5 +32,5 @@ BYTE	: IN/OUT [0001 1101], PUSH '␝'; Group Separator
 BYTE	: IN/OUT [0001 1110], PUSH '␞'; Record Separator
 BYTE	: IN/OUT [0001 1111], PUSH '␟'; Unit Separator
 BYTE	: IN/OUT [0111 1111], PUSH '␡'; Delete
-DO LOCK  = "Keyboard locked successfully"
-DO NOT LOCK = "Unlocked keyboard successfully"
+DO LOCK  [AH  AL]; with in lock
+DO NOT LOCK [BH BH]; with out lock
