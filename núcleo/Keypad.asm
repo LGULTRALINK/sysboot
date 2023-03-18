@@ -1,4 +1,4 @@
-IN CALL  "switch signal to turn on"
+DO CALL  "switch signal to turn on"
 TEST AND "Power-Up Display successfully"
 TEST OR "Power-Up Display unsuccessfully"
 OUT CALL "Standby Display"
@@ -42,13 +42,8 @@ MOV [DI], MOVSB [0001 1100]; File Separator
 MOV [DI], MOVSB [0001 1101]; Group Separator
 MOV [DI], MOVSB [0001 1110]; Record Separator
 MOV [DI], MOVSB [0001 1111]; Unit Separator
-POP [0H], MOVSB [0010 0000]; Space in Blank
-POP [1H], MOVSB [0010 0001]; Exclamation mark
-POP [2H], MOVSB [0010 0010]; Quotation Mark
-POP [3H], MOVSB [0010 0011]; Number
-POP [4H], MOVSB [0010 0100]; Dollar
-POP [5H], MOVSB [0010 0101]; Percent
-SUB [6H], MOVSB [0111 1111]; Delete
+MOV [OH], MOVSB [0010 0000]; Space in Blank
+SUB [IN], MOVSB [0111 1111]; Delete
 MOVS [EAH], MOVSW "high access space";
 MOV [AH],[AL], MOVSB [1000 0000]; Start of Selected Area
 MOV [AH],[AL], MOVSB [1000 0001]; End of Selected Area
@@ -59,9 +54,10 @@ MOV [BH],[BL], MOVSB [1000 1000]; Reverse Line Feed
 MOV [BH],[BL], MOVSB [1000 1001]; Partial Line Foreward
 MOV [BH],[BL], MOVSB [1000 1010]; Partial Line Backward
 MOV [BH],[BL], MOVSB [1000 1011]; Set Transmit State
-IN CALL "signal switch to turn off"
+DO CALL "signal switch to turn off"
 TEST NEG "Power-Down  Display successfully"
 TEST NOT "Power-Down Display unsuccessfully"
 OUT CALL "Suspend Display"
 RET "idle Permitted Here"
 NOP "it is out of order"
+
