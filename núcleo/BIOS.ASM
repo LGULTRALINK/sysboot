@@ -21,7 +21,7 @@ BYTE	: IN/OUT [0001 0010], PUSH '␒'; Device Control 2
 BYTE	: IN/OUT [0001 0011], PUSH '␓'; Device Control 3
 BYTE	: IN/OUT [0001 0100], PUSH '␔'; Device Control 4
 BYTE	: IN/OUT [0001 0101], PUSH '␕'; Negative Acknowledge
-BYTE	: IN/OUT [0001 0110], PUSH '␖'; Synchronous
+BYTE	: IN/OUT [0001 0110], PUSH '␖'; Synchronous Idle
 BYTE	: IN/OUT [0001 0111], PUSH '␗'; End of Transmission Blocking
 BYTE	: IN/OUT [0001 1000], PUSH '␘'; Cancel
 BYTE	: IN/OUT [0001 1001], PUSH '␙'; End of Medium
