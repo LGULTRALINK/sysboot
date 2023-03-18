@@ -1,7 +1,7 @@
-CALL IN "switch signal to turn on"
+CALL IN  "switch signal to turn on"
 TEST AND "Power-Up Display successfully"
 TEST OR "Power-Up Display unsuccessfully"
-RET "Standby Display"
+CALL OUT "Standby Display"
 CPU "is in protected mode"
 MOVS [EAX], MOVSW "space access";
 NOP [AH], MOVSB [0000 0000]; Null
@@ -42,7 +42,8 @@ MOV [DI], MOVSB [0001 1100]; File Separator
 MOV [DI], MOVSB [0001 1101]; Group Separator
 MOV [DI], MOVSB [0001 1110]; Record Separator
 MOV [DI], MOVSB [0001 1111]; Unit Separator
-CALL OUT "signal switch to turn off"
+CALL IN "signal switch to turn off"
 TEST NEG "Power-Down  Display successfully"
 TEST NOT "Power-Down Display unsuccessfully"
-RET "Suspend Display"
+CALL OUT "Suspend Display"
+RET NOP
