@@ -40,5 +40,5 @@ IN/OUT [0CH]: TEST AND/OR; high code
 IN/OUT [0DH]: TEST AND/OR; high data
 IN/OUT [0EH]: TEST AND/OR; high space
 IN/OUT [0FH]: TEST AND/OR; high file
-IN/OUT [ESP]; TEST AND/OR; put stack space
-IN/OUT [EBP], TEST AND/OR; put base space
+IN/OUT [EAH]: TEST AND/OR; high access space
+IN/OUT [EBH], TEST AND/OR; high base space
