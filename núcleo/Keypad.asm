@@ -43,7 +43,7 @@ MOV [DI], MOVSB [0001 1101]; Group Separator
 MOV [DI], MOVSB [0001 1110]; Record Separator
 MOV [DI], MOVSB [0001 1111]; Unit Separator
 MOV [SI], MOVSB [0010 0000]; Space in Blank
-MOVS [EAH], MOVSW "high crawl space";
+MOVS [EAH], MOVSW "high access space";
 MOV [AH],[AL], MOVSB [1000 0000]; Start of Selected Area
 MOV [AH],[AL], MOVSB [1000 0001]; End of Selected Area
 MOV [AH],[AL], MOVSB [1000 0010]; Start of Protected Area
