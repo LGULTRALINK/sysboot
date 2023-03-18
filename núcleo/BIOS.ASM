@@ -22,7 +22,7 @@ BYTE	: IN/OUT [0001 0011], PUSH '␓'; Device Control 3
 BYTE	: IN/OUT [0001 0100], PUSH '␔'; Device Control 4
 BYTE	: IN/OUT [0001 0101], PUSH '␕'; Negative Acknowledge
 BYTE	: IN/OUT [0001 0110], PUSH '␖'; Synchronous Idle
-BYTE	: IN/OUT [0001 0111], PUSH '␗'; End of Transmission Blocking
+BYTE	: IN/OUT [0001 0111], PUSH '␗'; End of Transmission Block 
 BYTE	: IN/OUT [0001 1000], PUSH '␘'; Cancel
 BYTE	: IN/OUT [0001 1001], PUSH '␙'; End of Medium
 BYTE	: IN/OUT [0001 1010], PUSH '␚'; Substitute
@@ -32,3 +32,5 @@ BYTE	: IN/OUT [0001 1101], PUSH '␝'; Group Separator
 BYTE	: IN/OUT [0001 1110], PUSH '␞'; Record Separator
 BYTE	: IN/OUT [0001 1111], PUSH '␟'; Unit Separator
 BYTE	: IN/OUT [0111 1111], PUSH '␡'; Delete
+LOCK IN
+LOCK OUT
