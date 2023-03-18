@@ -2,7 +2,7 @@ CALL IN  "switch signal to turn on"
 TEST AND "Power-Up Display successfully"
 TEST OR "Power-Up Display unsuccessfully"
 CALL OUT "Standby Display"
-RET "High chipsets Preset"
+RET "Micro chip Preset"
 MOVS [EAX], MOVSW "space access";
 NOP [AX],[DX], MOVSB [0000 0000]; Null
 MOV [AX],[DX], MOVSB [0000 0001]; Start of Header
@@ -57,4 +57,4 @@ CALL IN "signal switch to turn off"
 TEST NEG "Power-Down  Display successfully"
 TEST NOT "Power-Down Display unsuccessfully"
 CALL OUT "Suspend Display"
-RET NOP
+RET "Break Permitted Here"
