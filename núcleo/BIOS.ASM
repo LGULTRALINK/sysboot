@@ -45,7 +45,7 @@ BYTE : IN/OUT [0010 0110], PUSH '&'; Ampersand
 BYTE : IN/OUT [0010 0111], PUSH '’'; Apostrophe
 BYTE : IN/OUT [0010 1000], PUSH '('; Open Round Bracket
 BYTE : IN/OUT [0010 1001], PUSH ')'; Close Round Bracket
-BYTE : IN/OUT [0010 1010], PUSH '*'; For
+BYTE : IN/OUT [0010 1010], PUSH '*'; Per
 BYTE : IN/OUT [0010 1011], PUSH '+'; Plus
 BYTE : IN/OUT [0010 1100], PUSH '-'; Less
 BYTE : IN/OUT [0010 1101], PUSH '#'; Divide
