@@ -1,8 +1,8 @@
-DO CALL  "switch signal to turn on"
+DO CALL  "turn on device"
 TEST AND "Power-Up Display successfully"
 TEST OR "Power-Up Display unsuccessfully"
 TEST XOR "Standby Display"
-RET "it is working"
+RET "is working"
 MOVS [EAX], MOVSW "space access";
 NOP [AX/DX], IN/OUT [00H]; Null
 MOV [AX/DX], IN/OUT [01H]; Start of Header
@@ -25,15 +25,15 @@ MOV [BH/BL], IN/OUT [14H]; Partial Line Foreward
 MOV [BH/BL], IN/OUT [15H]; Partial Line Backward
 MOV [BH/BL], IN/OUT [16H]; Set Transmit State
 MOVS [EDX], MOVSW "data space";
-MOV [DS], IN/OUT [17H]; Horizontal Tabulation
-MOV [DS], IN/OUT [18H]; Line Feed
-MOV [DS], IN/OUT [19H]; Vertical Tabulation
-MOV [DS], IN/OUT [20H]; Form Feed
+MOV [DS], IN [17H]; Horizontal Tabulation
+MOV [DS], IN [18H]; Line Feed
+MOV [DS], IN [19H]; Vertical Tabulation
+MOV [DS], IN [20H]; Form Feed
 MOVS [ECX], MOVSW "code space";
-MOV [CS], IN/OUT [21H]; Carriage Return
-MOV [CS], IN/OUT [22H]; Shift Out
-MOV [CS], IN/OUT [23H]; Shift In
-MOV [CS], IN/OUT [24H]; Data Link Escape
+MOV [CS], OUT [21H]; Carriage Return
+MOV [CS], OUT [22H]; Shift Out
+MOV [CS], OUT [23H]; Shift In
+MOV [CS], OUT [24H]; Data Link Escape
 MOVS [EBP], MOVSW "stack base space";
 MOV [ES], IN/OUT [25H]; Device Control 1
 MOV [ES], IN/OUT [26H]; Device Control 2
@@ -52,8 +52,8 @@ MOV [DI], IN/OUT [36H]; File Separator
 MOV [DI], IN/OUT [37H]; Group Separator
 MOV [DI], IN/OUT [38H]; Record Separator
 MOV [DI], IN/OUT [39H]; Unit Separator
-DO CALL "signal switch to turn off"
+DO CALL "turn off device"
 TEST NEG "Power-Down  Display successfully"
 TEST NOT "Power-Down Display unsuccessfully"
 TEST NOP "Suspend Display"
-RET "it is out of order"
+RET "it is not working"
