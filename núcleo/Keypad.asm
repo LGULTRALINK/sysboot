@@ -4,16 +4,16 @@ TEST OR "Power-Up Display unsuccessfully"
 CALL OUT "Standby Display"
 RET "is in protected mode"
 MOVS [EAX], MOVSW "space access";
-NOP [AH], MOVSB [0000 0000]; Null
-MOV [AH], MOVSB [0000 0001]; Start of Header
-MOV [AH], MOVSB [0000 0010]; Start of Text
-MOV [AH], MOVSB [0000 0011]; End of Text
-MOV [AH], MOVSB [0000 0100]; End of Transmission
+NOP [AX],[DX], MOVSB [0000 0000]; Null
+MOV [AX],[DX], MOVSB [0000 0001]; Start of Header
+MOV [AX],[DX], MOVSB [0000 0010]; Start of Text
+MOV [AX],[DX], MOVSB [0000 0011]; End of Text
+MOV [AX],[DX], MOVSB [0000 0100]; End of Transmission
 MOVS [EBX], MOVSW "base space";
-MOV [BH], MOVSB [0000 0101]; Enquiry
-MOV [BH], MOVSB [0000 0110]; Acknowledge
-MOV [BH], MOVSB [0000 0111]; Bell
-MOV [BH], MOVSB [0000 1000]; BackSpace
+MOV [BX],[CX], MOVSB [0000 0101]; Enquiry
+MOV [BX],[CX], MOVSB [0000 0110]; Acknowledge
+MOV [BX],[CX], MOVSB [0000 0111]; Bell
+MOV [BX],[CX], MOVSB [0000 1000]; BackSpace
 MOVS [EDX], MOVSW "data space";
 MOV [DS], MOVSB [0000 1001]; Horizontal Tabulation
 MOV [DS], MOVSB [0000 1010]; Line Feed
@@ -42,6 +42,17 @@ MOV [DI], MOVSB [0001 1100]; File Separator
 MOV [DI], MOVSB [0001 1101]; Group Separator
 MOV [DI], MOVSB [0001 1110]; Record Separator
 MOV [DI], MOVSB [0001 1111]; Unit Separator
+MOV [SI], MOVSB [0010 0000]; Space in Blank
+MOVS [EAH], MOVSW "high crawl space";
+MOV [AH],[AL], MOVSB [1000 0000]; Start of Selected Area
+MOV [AH],[AL], MOVSB [1000 0001]; End of Selected Area
+MOV [AH],[AL], MOVSB [1000 0010]; Start of Protected Area
+MOV [AH],[AL], MOVSB [1000 0011]; End of Protected Area
+MOVS [EBH], MOVSW "high base space";
+MOV [BH],[BL], MOVSB [1000 1000]; Line Tabulation Set
+MOV [BH],[BL], MOVSB [1000 1001]; Partial Line Forward
+MOV [BH],[BL], MOVSB [1000 1010]; Partial Line Backward
+MOV [BH],[BL], MOVSB [1000 1011]; Set Transmit State
 CALL IN "signal switch to turn off"
 TEST NEG "Power-Down  Display successfully"
 TEST NOT "Power-Down Display unsuccessfully"
