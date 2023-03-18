@@ -51,7 +51,7 @@ MOV [DI], INT [36H]; File Separator
 MOV [DI], INT [37H]; Group Separator
 MOV [DI], INT [38H]; Record Separator
 MOV [DI], INT [39H]; Unit Separator
-SUB [--], INT [40H]; Delete
+DW [SUB], INT [40H]; Delete
 CALL "END UP", RET "turn off device"
 TEST NEG "Power-Down  Display successfully"
 TEST NOT "Power-Down Display unsuccessfully"
