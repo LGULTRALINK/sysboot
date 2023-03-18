@@ -42,7 +42,7 @@ MOV [DI], MOVSB [0001 1100]; File Separator
 MOV [DI], MOVSB [0001 1101]; Group Separator
 MOV [DI], MOVSB [0001 1110]; Record Separator
 MOV [DI], MOVSB [0001 1111]; Unit Separator
-MOV [0H], MOVSB [0010 0000]; Space in Blank
+MOV [  ], MOVSB [0010 0000]; Space in Blank
 SUB [IN], MOVSB [0111 1111]; Delete
 MOVS [EAH], MOVSW "high access space";
 MOV [AH],[AL], MOVSB [1000 0000]; Start of Selected Area
