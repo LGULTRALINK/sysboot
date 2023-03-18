@@ -4,7 +4,7 @@ TEST OR "Power-Up Display unsuccessfully"
 TEST XOR "Standby Display"
 RET "is working"
 MOVS [EAX], MOVSW "space access";
-NOP [AX/DX], IN/OUT [00H]; Null
+MOV [AX/DX], IN/OUT [00H]; Null
 MOV [AX/DX], IN/OUT [01H]; Start of Header
 MOV [AX/DX], IN/OUT [02H]; Start of Text
 MOV [AX/DX], IN/OUT [03H]; End of Text
@@ -25,10 +25,10 @@ MOV [BH/BL], IN/OUT [14H]; Partial Line Foreward
 MOV [BH/BL], IN/OUT [15H]; Partial Line Backward
 MOV [BH/BL], IN/OUT [16H]; Set Transmit State
 MOVS [EDX], MOVSW "data space";
-MOV [DS], IN [17H]; Horizontal Tabulation
-MOV [DS], IN [18H]; Line Feed
-MOV [DS], IN [19H]; Vertical Tabulation
-MOV [DS], IN [20H]; Form Feed
+MOV [DS], IN/IN [17H]; Horizontal Tabulation
+MOV [DS], IN/IN [18H]; Line Feed
+MOV [DS], IN/IN [19H]; Vertical Tabulation
+MOV [DS], IN/IN [20H]; Form Feed
 MOVS [ECX], MOVSW "code space";
 MOV [CS], OUT [21H]; Carriage Return
 MOV [CS], OUT [22H]; Shift Out
