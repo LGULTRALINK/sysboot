@@ -42,8 +42,13 @@ MOV [DI], MOVSB [0001 1100]; File Separator
 MOV [DI], MOVSB [0001 1101]; Group Separator
 MOV [DI], MOVSB [0001 1110]; Record Separator
 MOV [DI], MOVSB [0001 1111]; Unit Separator
-MOV [SI], MOVSB [0010 0000]; Space in Blank
-SUB [DS], MOVSB [0111 1111]; Delete
+POP [0H], MOVSB [0010 0000]; Space in Blank
+POP [1H], MOVSB [0010 0001]; Exclamation mark
+POP [2H], MOVSB [0010 0010]; Quotation Mark
+POP [3H], MOVSB [0010 0011]; Hash
+POP [4H], MOVSB [0010 0100]; Dollar
+POP [5H], MOVSB [0010 0101]; Percent
+SUB [6H], MOVSB [0111 1111]; Delete
 MOVS [EAH], MOVSW "high access space";
 MOV [AH],[AL], MOVSB [1000 0000]; Start of Selected Area
 MOV [AH],[AL], MOVSB [1000 0001]; End of Selected Area
