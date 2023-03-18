@@ -1,4 +1,4 @@
-CALL "Full On", RET "Turn on from zero to one"
+CALL "Full On", RET "it's working"
 TEST AND "Power-Up Display successfully"
 TEST OR "Power-Up Display unsuccessfully"
 TEST XOR "Standby Display"
@@ -52,7 +52,7 @@ MOV [DI], INT [37H]; Group Separator
 MOV [DI], INT [38H]; Record Separator
 MOV [DI], INT [39H]; Unit Separator
 DW [SUB], INT [40H]; Delete
-CALL "Full Off", RET "Turn off from one to zero"
+CALL "Full Off", RET "it is not working"
 TEST NEG "Power-Down  Display successfully"
 TEST NOT "Power-Down Display unsuccessfully"
 TEST NOP "Suspend Display"
