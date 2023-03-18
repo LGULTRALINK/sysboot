@@ -51,7 +51,7 @@ MOV [DI], INT [36H]; File Separator
 MOV [DI], INT [37H]; Group Separator
 MOV [DI], INT [38H]; Record Separator
 MOV [DI], INT [39H]; Unit Separator
-DW [SUB], INT [40H]; Delete
+IN [SUB], INT [40H]; Delete
 DO "Off", CALL "inner workings disable"
 TEST NEG "Power-Down  Display successfully"
 TEST NOT "Power-Down Display unsuccessfully"
