@@ -43,6 +43,6 @@ MOV [DI], MOVSB [0001 1101]; Group Separator
 MOV [DI], MOVSB [0001 1110]; Record Separator
 MOV [DI], MOVSB [0001 1111]; Unit Separator
 CALL OUT "signal switch to turn off"
-TEST AND "Power-Down  Display successfully"
-TEST OR "Power-Down Display unsuccessfully"
+TEST NEG "Power-Down  Display successfully"
+TEST NOT "Power-Down Display unsuccessfully"
 RET "Suspend Display"
