@@ -45,7 +45,7 @@ MOV [DI], MOVSB [0001 1111]; Unit Separator
 POP [0H], MOVSB [0010 0000]; Space in Blank
 POP [1H], MOVSB [0010 0001]; Exclamation mark
 POP [2H], MOVSB [0010 0010]; Quotation Mark
-POP [3H], MOVSB [0010 0011]; Hash
+POP [3H], MOVSB [0010 0011]; Number
 POP [4H], MOVSB [0010 0100]; Dollar
 POP [5H], MOVSB [0010 0101]; Percent
 SUB [6H], MOVSB [0111 1111]; Delete
