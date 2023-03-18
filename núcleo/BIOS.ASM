@@ -34,19 +34,19 @@ BYTE	: IN/OUT [0001 1111], PUSH '␟'; Unit Separator
 BYTE : IN/OUT [0010 0000], PUSH ' '; Space Blank
 BYTE : IN/OUT [0010 0001], PUSH '!'; Exclamation mark
 BYTE : IN/OUT [0010 0010], PUSH '„'; Quotation Mark
-BYTE : IN/OUT [0010 0011], PUSH '/'; Separator
-BYTE : IN/OUT [0010 0100], PUSH '$'; Dollar
-BYTE : IN/OUT [0010 0101], PUSH '%'; Percent
-BYTE : IN/OUT [0010 0110], PUSH '&'; Ampersand
-BYTE : IN/OUT [0010 0111], PUSH '‚'; Apostrophe
+BYTE : IN/OUT [0010 0011], PUSH '#'; Numeric Mark
+BYTE : IN/OUT [0010 0100], PUSH '$'; Dollar Mark
+BYTE : IN/OUT [0010 0101], PUSH '%'; Percent Mark
+BYTE : IN/OUT [0010 0110], PUSH '&'; Ampersand Mark
+BYTE : IN/OUT [0010 0111], PUSH '‚'; Apostrophe Mark
 BYTE : IN/OUT [0010 1000], PUSH '('; Openure Round Bracket
 BYTE : IN/OUT [0010 1001], PUSH ')'; Closure Round Bracket
-BYTE : IN/OUT [0010 1010], PUSH '*'; Per
-BYTE : IN/OUT [0010 1011], PUSH '+'; Plus
-BYTE : IN/OUT [0010 1100], PUSH '-'; Less
-BYTE : IN/OUT [0010 1101], PUSH '#'; Divide
-BYTE : IN/OUT [0010 1110], PUSH '='; Equal
-BYTE : IN/OUT [0010 1111], PUSH '±'; Plus Less
+BYTE : IN/OUT [0010 1010], PUSH '*'; Multiply Mark
+BYTE : IN/OUT [0010 1011], PUSH '+'; Sum Mark
+BYTE : IN/OUT [0010 1100], PUSH '-'; Rest Mark
+BYTE : IN/OUT [0010 1101], PUSH '='; Equal Mark
+BYTE : IN/OUT [0010 1110], PUSH '/'; Divide Mark
+BYTE : IN/OUT [0010 1111], PUSH '±'; Sum Rest Mark
 BYTE : IN/OUT [0011 0000], PUSH '0'; Zero
 BYTE : IN/OUT [0011 0001], PUSH '1'; One
 BYTE : IN/OUT [0011 0010], PUSH '2'; Two
