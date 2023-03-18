@@ -1,4 +1,4 @@
-CALL "ON SET", RET "turn on device"
+CALL "START UP", RET "turn on device"
 TEST AND "Power-Up Display successfully"
 TEST OR "Power-Up Display unsuccessfully"
 TEST XOR "Standby Display"
@@ -51,7 +51,7 @@ MOV [DI], INT [36H]; File Separator
 MOV [DI], INT [37H]; Group Separator
 MOV [DI], INT [38H]; Record Separator
 MOV [DI], INT [39H]; Unit Separator
-CALL "OFF SET", RET "turn off device"
+CALL "END UP", RET "turn off device"
 TEST NEG "Power-Down  Display successfully"
 TEST NOT "Power-Down Display unsuccessfully"
 TEST NOP "Suspend Display"
