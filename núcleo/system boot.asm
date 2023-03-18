@@ -1,4 +1,4 @@
-CALL "Full On", RET "inner workings enabled"
+DO "Full On", CALL "inner workings enabled"
 TEST AND "Power-Up Display successfully"
 TEST OR "Power-Up Display unsuccessfully"
 TEST XOR "Standby Display"
@@ -52,7 +52,7 @@ MOV [DI], INT [37H]; Group Separator
 MOV [DI], INT [38H]; Record Separator
 MOV [DI], INT [39H]; Unit Separator
 DW [SUB], INT [40H]; Delete
-CALL "Full Off", RET "inner workings disabled"
+DO "Full Off", CALL "inner workings disabled"
 TEST NEG "Power-Down  Display successfully"
 TEST NOT "Power-Down Display unsuccessfully"
 TEST NOP "Suspend Display"
