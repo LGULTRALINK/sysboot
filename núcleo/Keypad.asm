@@ -1,5 +1,6 @@
-CALL IN "ignition switch signal"
-TEST "Power-Up Display Successfully"
+CALL IN "switch signal to turn on"
+TEST TRUE "Power-Up Display successfully"
+TEST FALSE "Power-Up Display unsuccessfully"
 RET "Standby Display"
 CPU "is in protected mode"
 MOVS [EAX], MOVSW "space access";
@@ -33,3 +34,15 @@ MOV [SS], MOVSB [0001 0101]; Negative Acknowledge
 MOV [SS], MOVSB [0001 0110]; Synchronous Idle
 MOV [SS], MOVSB [0001 0111]; End of Transmission Block
 MOV [SS], MOVSB [0001 1000]; Cancel
+MOVS [EIP], MOVSW "program index space"
+MOV [SI], MOVSB [0001 1001]; End of Medium
+MOV [SI], MOVSB [0001 1010]; Substitute
+MOV [SI], MOVSB [0001 1011]; Escape
+MOV [DI], MOVSB [0001 1100]; File Separator
+MOV [DI], MOVSB [0001 1101]; Group Separator
+MOV [DI], MOVSB [0001 1110]; Record Separator
+MOV [DI], MOVSB [0001 1111]; Unit Separator
+CALL OUT "signal switch to turn off"
+TEST TRUE "Power-Down  Display successfully"
+TEST FALSE "Power-Down Display unsuccessfully"
+RET "Suspend Display"
