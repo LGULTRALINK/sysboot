@@ -32,8 +32,8 @@ BYTE	: INT [0001 1101], PUSH '␝'; Group Separator
 BYTE	: INT [0001 1110], PUSH '␞'; Record Separator
 BYTE	: INT [0001 1111], PUSH '␟'; Unit Separator
 BYTE	: INT [0111 1111], PUSH '␡'; Delete
-DO LOCK  [ON]; with in lock
-DO NOT LOCK [OFF]; with out lock
+DO LOCK  [IF]; with in lock
+DO NOT LOCK [OF]; with out lock
 IN/OUT [0AH]: TEST AND/OR; high access
 IN/OUT [0BH]: TEST AND/OR; high base
 IN/OUT [0CH]: TEST AND/OR; high code
