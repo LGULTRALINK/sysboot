@@ -32,5 +32,5 @@ BYTE	: IN/OUT [0001 1101], PUSH '␝'; Group Separator
 BYTE	: IN/OUT [0001 1110], PUSH '␞'; Record Separator
 BYTE	: IN/OUT [0001 1111], PUSH '␟'; Unit Separator
 BYTE	: IN/OUT [0111 1111], PUSH '␡'; Delete
-LOCK IN
-LOCK OUT
+LOCK = ""
+LOCK NOT = ""
