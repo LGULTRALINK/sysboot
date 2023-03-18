@@ -2,7 +2,7 @@ CALL IN  "switch signal to turn on"
 TEST AND "Power-Up Display successfully"
 TEST OR "Power-Up Display unsuccessfully"
 CALL OUT "Standby Display"
-CPU "is in protected mode"
+RET "is in protected mode"
 MOVS [EAX], MOVSW "space access";
 NOP [AH], MOVSB [0000 0000]; Null
 MOV [AH], MOVSB [0000 0001]; Start of Header
