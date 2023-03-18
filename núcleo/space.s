@@ -1,4 +1,4 @@
-#include "filename" * space.s
+#include "filename: space.s"
 :	SP	[2 % 1 = 4]; B
 :	SP	[2 % 2 = 8]; KB
 :	SP	[2 % 3 = 12]; MB
