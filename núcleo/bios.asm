@@ -9,16 +9,6 @@ WORD	: Binary Input Output System	; Machine Language
 * MUL [2 × 7 = 14]: IN [IP] / OUT [IP];
 * MUL [2 × 8 = 16]: IN [AH] / OUT [AL];
 * MUL [2 × 9 = 18]: IN [BH] / OUT [BL];
-# DIV [2 ÷ 0 = 0]: NOT IN / NOT OUT  ;
-# DIV [2 ÷ 1 = 0.5]: IN [SS] / OUT [ES];
-# DIV [2 ÷ 2 = 1]: IN [CS] / OUT [DS];
-# DIV [2 ÷ 3 = 1.5]: IN [SI] / OUT [DI];
-# DIV [2 ÷ 4 = 2]: IN [SP] / OUT [BP];
-# DIV [2 ÷ 5 = 2.5]: IN [AX] / OUT [BX];
-# DIV [2 ÷ 6 = 3]: IN [DX] / OUT [CX];
-# DIV [2 ÷ 7 = 3.5]: IN [IP] / OUT [IP];
-# DIV [2 ÷ 8 = 4]: IN [AH] / OUT [AL];
-# DIV [2 ÷ 9 = 4.5]: IN [BH] / OUT [BL];
 BYTE	: INT [0000 0000], PUSH '␀'; Null
 BYTE	: INT [0000 0001], PUSH '␁'; Start of Header
 BYTE	: INT [0000 0010], PUSH '␂'; Start of Text
