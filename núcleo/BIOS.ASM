@@ -1,4 +1,4 @@
-WORD	: Binary Input Output System	; Control Keyboard
+WORD	: Binary Input Output System	; Machine Language
 BYTE	: IN/OUT [0000 0000], PUSH '␀'; Null
 BYTE	: IN/OUT [0000 0001], PUSH '␁'; Start of Header
 BYTE	: IN/OUT [0000 0010], PUSH '␂'; Start of Text
