@@ -1,6 +1,6 @@
 CALL IN "switch signal to turn on"
-TEST ACT "Power-Up Display successfully"
-TEST ERR "Power-Up Display unsuccessfully"
+TEST AND "Power-Up Display successfully"
+TEST OR "Power-Up Display unsuccessfully"
 RET "Standby Display"
 CPU "is in protected mode"
 MOVS [EAX], MOVSW "space access";
@@ -43,6 +43,6 @@ MOV [DI], MOVSB [0001 1101]; Group Separator
 MOV [DI], MOVSB [0001 1110]; Record Separator
 MOV [DI], MOVSB [0001 1111]; Unit Separator
 CALL OUT "signal switch to turn off"
-TEST ACT "Power-Down  Display successfully"
-TEST ERR "Power-Down Display unsuccessfully"
+TEST AND "Power-Down  Display successfully"
+TEST OR "Power-Down Display unsuccessfully"
 RET "Suspend Display"
