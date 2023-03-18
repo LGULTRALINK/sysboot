@@ -49,8 +49,8 @@ MOV [AH],[AL], MOVSB [1000 0001]; End of Selected Area
 MOV [AH],[AL], MOVSB [1000 0010]; Start of Protected Area
 MOV [AH],[AL], MOVSB [1000 0011]; End of Protected Area
 MOVS [EBH], MOVSW "high base space";
-MOV [BH],[BL], MOVSB [1000 1000]; Line Tabulation Set
-MOV [BH],[BL], MOVSB [1000 1001]; Partial Line Forward
+MOV [BH],[BL], MOVSB [1000 1000]; Reverse Line Feed
+MOV [BH],[BL], MOVSB [1000 1001]; Partial Line Foreward
 MOV [BH],[BL], MOVSB [1000 1010]; Partial Line Backward
 MOV [BH],[BL], MOVSB [1000 1011]; Set Transmit State
 CALL IN "signal switch to turn off"
