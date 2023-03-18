@@ -1,4 +1,4 @@
-MOVS IN/OUT [EAX]: MOVS OUT/IN [EBX]; medium of exchange
+MOVS IN [EAX]: MOVS OUT [EBX]; medium of exchange
 INC [0 > 0 = $00]: IN [AX], OUT [BX]; value of zero
 INC [0 > 1 = $10]: IN [AX], OUT [BX]; value of ten
 INC [0 > 2 = $20]: IN [AX], OUT [BX]; value of twenty
