@@ -41,12 +41,12 @@ BYTE : IN/OUT [0010 0110], PUSH '&'; Ampersand Mark
 BYTE : IN/OUT [0010 0111], PUSH '‚'; Apostrophe Mark
 BYTE : IN/OUT [0010 1000], PUSH '('; Openure Round Bracket
 BYTE : IN/OUT [0010 1001], PUSH ')'; Closure Round Bracket
-BYTE : IN/OUT [0010 1010], PUSH '×'; Multiply Mark
-BYTE : IN/OUT [0010 1011], PUSH '+'; More Mark
-BYTE : IN/OUT [0010 1100], PUSH '-'; Minus Mark
-BYTE : IN/OUT [0010 1101], PUSH '='; Equal Mark
-BYTE : IN/OUT [0010 1110], PUSH '÷'; Divide Mark
-BYTE : IN/OUT [0010 1111], PUSH '±'; More Minus Mark
+BYTE : IN/OUT [0010 1010], PUSH '×'; Mark Multiply 
+BYTE : IN/OUT [0010 1011], PUSH '+'; Mark More
+BYTE : IN/OUT [0010 1100], PUSH '-'; Mark Minus
+BYTE : IN/OUT [0010 1101], PUSH '='; Mark Equal
+BYTE : IN/OUT [0010 1110], PUSH '÷'; Mark Divide
+BYTE : IN/OUT [0010 1111], PUSH '±'; Mark More or Minus
 BYTE : IN/OUT [0011 0000], PUSH '0'; Zero
 BYTE : IN/OUT [0011 0001], PUSH '1'; One
 BYTE : IN/OUT [0011 0010], PUSH '2'; Two
@@ -61,5 +61,5 @@ BYTE : IN/OUT [0011 1010], PUSH '<'; Less
 BYTE : IN/OUT [0011 1011], PUSH '>'; Plus 
 BYTE : IN/OUT [0011 1100], PUSH '¿'; Openure Question  Mark 
 BYTE : IN/OUT [0011 1101], PUSH '?'; Closure  Question  Mark 
-BYTE : IN/OUT [0011 1110], PUSH '/'; Slash
-BYTE : IN/OUT [0011 1111], PUSH '\'; Backslash 
+BYTE : IN/OUT [0011 1110], PUSH '/'; Spreader Bar
+BYTE : IN/OUT [0011 1111], PUSH '\'; Inverted Spreader Bar
