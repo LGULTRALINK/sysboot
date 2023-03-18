@@ -1,5 +1,5 @@
 WORD	: Binary Input Output System	; silicon chipsets
-BYTE	: IN/OUT [0000 0000], PUSH '␀'; NUL
+BYTE	: IN/OUT [0000 0000], PUSH '␀'; 
 BYTE	: IN/OUT [0000 0001], PUSH '␁';
 BYTE	: IN/OUT [0000 0010], PUSH '␂';
 BYTE	: IN/OUT [0000 0011], PUSH '␃';
