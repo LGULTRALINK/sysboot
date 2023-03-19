@@ -1,6 +1,7 @@
 #include "checksum"
-equ = ds
-equ = sp
+#include "output/input"
+#include "true/false"
+#include "entry/exit"
 checkin:(0 ~ 9)	{
 sum:	val	[0 + $ 0 = 0x00];
 sum:	val	[0 + $ 1 = 0x10];
