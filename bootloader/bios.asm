@@ -1,4 +1,3 @@
-
 WORD	: Binary Input Output System	; Machine Language
 *	IN	[AX]	/	OUT	[BX],	MUL	[2 × 0 = 0];
 *	IN	[AX]	/	OUT	[BX],	MUL	[2 × 1 = 2];
