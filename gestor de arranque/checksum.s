@@ -1,4 +1,4 @@
-#include "amount of memory in values"
+#include "central processing unit addresses"
 :	DS	[0 > $ 0 = 0x00];
 :	DS	[0 > $ 1 = 0x10];
 :	DS	[0 > $ 2 = 0x20];
@@ -9,7 +9,7 @@
 :	DS	[0 > $ 7 = 0x70];
 :	DS	[0 > $ 8 = 0x80];
 :	DS	[0 > $ 9 = 0x90];
-* this line is blank
+/ * this line is blank * /
 :	DS	[0 > $ 10 = 0x100];
 :	DS	[0 > $ 11 = 0x110];
 :	DS	[0 > $ 12 = 0x120];
@@ -20,7 +20,7 @@
 :	DS	[0 > $ 17 = 0x170];
 :	DS	[0 > $ 18 = 0x180];
 :	DS	[0 > $ 19 = 0x190]; 
-* this line is blank
+/ * this line is blank * /
 :	DS	[0 > $ 20 = 0x200];
 :	DS	[0 > $ 21 = 0x210];
 :	DS	[0 > $ 22 = 0x220];
