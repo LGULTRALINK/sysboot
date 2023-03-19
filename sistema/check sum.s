@@ -1,6 +1,6 @@
 #include "getup/setup"
-subtract: "delete size"; /* -1024B */
-add: "create size"; /* +1024B */
+subtract: "delete size";- 1024 KB
+add: "create size";+ 1024 KB
 checkin:(0 ~ 9)	{
 sum:	val	[0 + $ 0 = 0x00];
 sum:	val	[0 + $ 1 = 0x10];
