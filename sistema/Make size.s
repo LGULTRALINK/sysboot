@@ -1,5 +1,5 @@
-#include "compile code"
-#include "run code"
+#include "compile this file to machine language"
+#include "this file is executed"
 	chipset:("rate of two bits per second")	{
 size:([2 % 1 = 0x4]); 
 size:([2 % 2 = 0x8]); 
