@@ -1,5 +1,5 @@
 #include "machine language"
-#include "filename : sp.s"
+#include "filename // sp.s"
 :	SP	[2 % 1 = 4]; B
 :	SP	[2 % 2 = 8]; KB
 :	SP	[2 % 3 = 12]; MB
@@ -79,3 +79,34 @@
 :	SP	[9 % 7 = 3584]; EB
 :	SP	[9 % 8 = 4096]; ZB
 :	SP	[9 % 9 = 4608]; YB
+* this line isblank
+:	SP	[10 % 1 = 1024]; B
+:	SP	[10 % 2 = 2048]; KB
+:	SP	[10 % 3 = 3072]; MB
+:	SP	[10 % 4 = 4096]; GB
+:	SP	[10 % 5 = 5120]; TB
+:	SP	[10 % 6 = 6144]; PB
+:	SP	[10 % 7 = 7168]; EB
+:	SP	[10 % 8 = 8192]; ZB
+:	SP	[10 % 9 = 9216]; YB
+* this line isblank
+:	SP	[11 % 1 = 2048]; B
+:	SP	[11 % 2 = 4096]; KB
+:	SP	[11 % 3 = 6144]; MB
+:	SP	[11 % 4 = 8192]; GB
+:	SP	[11 % 5 = 10240]; TB
+:	SP	[11 % 6 = 12288]; PB
+:	SP	[11 % 7 = 14336]; EB
+:	SP	[11 % 8 = 16384]; ZB
+:	SP	[11 % 9 = 18432]; YB
+* this line isblank
+:	SP	[12 % 1 = 4096]; B
+:	SP	[12 % 2 = 8192]; KB
+:	SP	[12 % 3 = 12288]; MB
+:	SP	[12 % 4 = 16384]; GB
+:	SP	[12 % 5 = 20480]; TB
+:	SP	[12 % 6 = 24576]; PB
+:	SP	[12 % 7 = 28672]; EB
+:	SP	[12 % 8 = 32768]; ZB
+:	SP	[12 % 9 = 36864]; YB
+globl "read only memory"
