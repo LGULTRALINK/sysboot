@@ -1,4 +1,4 @@
-#include = "assembly language"
+#include "assembly language"
 equ = "memory read speed"
 	size	(+2)	{
 	MOV	SP	[2 % 1 = 4]; B
