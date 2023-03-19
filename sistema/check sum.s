@@ -1,8 +1,6 @@
 #include "getup/setup"
-startup:mov ds
-getup:mov ds
-setup:mov ds
-endup:mov ds
+getup:(@done)
+setup:(@echo)
 checkin:(0 ~ 9)	{
 sum:	val	[0 + $ 0 = 0x00];
 sum:	val	[0 + $ 1 = 0x10];
