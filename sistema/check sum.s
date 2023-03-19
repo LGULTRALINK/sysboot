@@ -1,6 +1,6 @@
 #include "checksum"
-in sp / out ds 00H
-in sp / out ds 80H
+equ = ds
+equ = sp
 checkin:(0 ~ 9)	{
 sum:	val	[0 + $ 0 = 0x00];
 sum:	val	[0 + $ 1 = 0x10];
