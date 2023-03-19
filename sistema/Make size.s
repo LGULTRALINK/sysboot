@@ -1,7 +1,7 @@
-#include "entry file"
-#include "exit file"
+#include "entry in file"
+#include "exit out file"
 runtime: "this file is executed"
-	Function:("rate of two bits per second")	{
+	Function:("make size")	{
 size:([2 % 1 = 0x4]); 
 size:([2 % 2 = 0x8]); 
 size:([2 % 3 = 0x12]); 
