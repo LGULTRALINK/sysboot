@@ -1,4 +1,5 @@
 #include = "assembly language"
+equ = "memory read speed"
 	size	(+2)	{
 	MOV	SP	[2 % 1 = 4]; B
 	MOV	SP	[2 % 2 = 8]; KB
