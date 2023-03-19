@@ -1,6 +1,6 @@
 #include "getup/setup"
-crete_size:( equ = 1024); MB
-delete_size:( equ = 1024); MB
+create:(size = 1024); MB
+delete:(size = 1024); MB
 checkin:(0 ~ 9)	{
 sum:	val	[0 + $ 0 = 0x00];
 sum:	val	[0 + $ 1 = 0x10];
