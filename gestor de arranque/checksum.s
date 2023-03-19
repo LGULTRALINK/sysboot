@@ -1,3 +1,4 @@
+#include "amount of memory in values"
 :	EQU	[0 $ 0 = 0x00];
 :	EQU	[0 $ 1 = 0x10];
 :	EQU	[0 $ 2 = 0x20];
