@@ -1,6 +1,7 @@
-#include "compile this file to machine language"
-#include "this file is executed"
-	chipset:("rate of two bits per second")	{
+#include "entry file"
+#include "exit file"
+runtime: "this file is executed"
+	Function:("rate of two bits per second")	{
 size:([2 % 1 = 0x4]); 
 size:([2 % 2 = 0x8]); 
 size:([2 % 3 = 0x12]); 
