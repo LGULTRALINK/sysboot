@@ -1,4 +1,4 @@
-#include "Mathematical Language"
+#include "math/symbolic language"
 checkin:	{
 sum:	val	[0 + $ 0 = 0x00];
 sum:	val	[0 + $ 1 = 0x10];
