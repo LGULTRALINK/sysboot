@@ -1,6 +1,6 @@
 #include "getup/setup"
-subtract: "delete size"; equ = - 1024 MB
-addition: "create size"; equ = + 1024 MB
+old: "delete size"; equ = 1024--; MB
+new: "create size"; equ = 1024++; MB
 checkin:(0 ~ 9)	{
 sum:	val	[0 + $ 0 = 0x00];
 sum:	val	[0 + $ 1 = 0x10];
