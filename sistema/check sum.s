@@ -85,7 +85,7 @@ sum:	val	[0 + $ 67 = 0x670];
 sum:	val	[0 + $ 68 = 0x680];
 sum:	val	[0 + $ 69 = 0x690];
 }
-checkin(70 ~ 79):	{
+checkin:(70 ~ 79)	{
 sum:	val	[0 + $ 70 = 0x700];
 sum:	val	[0 + $ 71 = 0x710];
 sum:	val	[0 + $ 72 = 0x720];
@@ -109,7 +109,7 @@ sum:	val	[0 + $ 87 = 0x870];
 sum:	val	[0 + $ 88 = 0x880];
 sum:	val	[0 + $ 89 = 0x890];
 }
-checkin(90 ~ 99):	{
+checkin:(90 ~ 99)	{
 sum:	val	[0 + $ 90 = 0x900];
 sum:	val	[0 + $ 91 = 0x910];
 sum:	val	[0 + $ 92 = 0x920];
