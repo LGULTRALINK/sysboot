@@ -1,5 +1,6 @@
 #include "machine language"
 #include "filename // sp.s"
+#include "readable file"
 :	SP	[2 % 1 = 4]; B
 :	SP	[2 % 2 = 8]; KB
 :	SP	[2 % 3 = 12]; MB
@@ -109,4 +110,3 @@
 :	SP	[12 % 7 = 28672]; EB
 :	SP	[12 % 8 = 32768]; ZB
 :	SP	[12 % 9 = 36864]; YB
-globl "read only memory"
