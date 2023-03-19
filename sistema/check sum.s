@@ -1,8 +1,8 @@
-#include "checksum"
-#include "getin/setin"
 #include "getup/setup"
-#include "true/false"
-#include "entry/exit"
+startup:mov ds
+getup:mov ds
+setup:mov ds
+endup:mov ds
 checkin:(0 ~ 9)	{
 sum:	val	[0 + $ 0 = 0x00];
 sum:	val	[0 + $ 1 = 0x10];
