@@ -1,5 +1,5 @@
 #include "assembly language"
-	(equ = val1)	{
+checkin:	{
 sum:	MOV	DS	[0 $ 0 = 00];
 sum:	MOV	DS	[0 $ 1 = 10];
 sum:	MOV	DS	[0 $ 2 = 20];
