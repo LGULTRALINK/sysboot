@@ -1,5 +1,6 @@
 #include "checksum"
-#include "output/input"
+#include "get/set"
+#include "put/out"
 #include "true/false"
 #include "entry/exit"
 checkin:(0 ~ 9)	{
