@@ -1,6 +1,6 @@
 #include "getup/setup"
-getup:(@done)
-setup:(@echo)
+addr: "write"; /* encode */
+addi: "read"; /* decode */
 checkin:(0 ~ 9)	{
 sum:	val	[0 + $ 0 = 0x00];
 sum:	val	[0 + $ 1 = 0x10];
