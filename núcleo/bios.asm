@@ -1,16 +1,102 @@
 WORD	: Binary Input Output System	; Machine Language
-* RET IP = 00000000-0000-0000-0000-000000000046
-* IRET IP = xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxMN
-* MUL [2 × 0 = 0]: NOT IN / NOT OUT  ; NULL
-* MUL [2 × 1 = 2]: IN [SS] / OUT [ES]; stack source / stack space
-* MUL [2 × 2 = 4]: IN [CS] / OUT [DS]; code segment / data segment
-* MUL [2 × 3 = 6]: IN [SI] / OUT [DI]; source index / destination index
-* MUL [2 × 4 = 8]: IN [SP] / OUT [BP]; put space / put base
-* MUL [2 × 5 = 10]: IN [AX] / OUT [BX]; access (? unknown) / base (? unknown)
-* MUL [2 × 6 = 12]: IN [DX] / OUT [CX]; code (? unknown) / data (? unknown)
-* MUL [2 × 7 = 14]: IN [IP] / OUT [JC];  index program / jump code
-* MUL [2 × 8 = 16]: IN [AH] / OUT [AL]; high access / low access
-* MUL [2 × 9 = 18]: IN [BH] / OUT [BL]; high base / low base
+*	IN	[AX]	/	OUT	[BX],	MUL	[2 × 0 = 0];
+*	IN	[AX]	/	OUT	[BX],	MUL	[2 × 1 = 2];
+*	IN	[AX]	/	OUT	[BX],	MUL	[2 × 2 = 4];
+*	IN	[AX]	/	OUT	[BX],	MUL	[2 × 3 = 6];
+*	IN	[AX]	/	OUT	[BX],	MUL	[2 × 4 = 8];
+*	IN	[AX]	/	OUT	[BX],	MUL	[2 × 5 = 10];
+*	IN	[AX]	/	OUT	[BX],	MUL	[2 × 6 = 12];
+*	IN	[AX]	/	OUT	[BX],	MUL	[2 × 7 = 14];
+*	IN	[AX]	/	OUT	[BX],	MUL	[2 × 8 = 16];
+*	IN	[AX]	/	OUT	[BX],	MUL	[2 × 9 = 18];
+; this line isblank
+*	IN	[DX]	/	OUT	[CX],	MUL	[3 × 0 = 0];
+*	IN	[DX]	/	OUT	[CX],	MUL	[3 × 1 = 3];
+*	IN	[DX]	/	OUT	[CX],	MUL	[3 × 2 = 6];
+*	IN	[DX]	/	OUT	[CX],	MUL	[3 × 3 = 9];
+*	IN	[DX]	/	OUT	[CX],	MUL	[3 × 4 = 12];
+*	IN	[DX]	/	OUT	[CX],	MUL	[3 × 5 = 15];
+*	IN	[DX]	/	OUT	[CX],	MUL	[3 × 6 = 18];
+*	IN	[DX]	/	OUT	[CX],	MUL	[3 × 7 = 21];
+*	IN	[DX]	/	OUT	[CX],	MUL	[3 × 8 = 24];
+*	IN	[DX]	/	OUT	[CX],	MUL	[3 × 9 = 27];
+; this line isblank
+*	IN	[AX]	/	OUT	[BX],	MUL	[4 × 0 = 0];
+*	IN	[AX]	/	OUT	[BX],	MUL	[4 × 1 = 4];
+*	IN	[AX]	/	OUT	[BX],	MUL	[4 × 2 = 8];
+*	IN	[AX]	/	OUT	[BX],	MUL	[4 × 3 = 12];
+*	IN	[AX]	/	OUT	[BX],	MUL	[4 × 4 = 16];
+*	IN	[AX]	/	OUT	[BX],	MUL	[4 × 5 = 20];
+*	IN	[AX]	/	OUT	[BX],	MUL	[4 × 6 = 24];
+*	IN	[AX]	/	OUT	[BX],	MUL	[4 × 7 = 28];
+*	IN	[AX]	/	OUT	[BX],	MUL	[4 × 8 = 32];
+*	IN	[AX]	/	OUT	[BX],	MUL	[4 × 9 = 36];
+; this line isblank
+*	IN	[DX]	/	OUT	[CX],	MUL	[5 × 0 = 0];
+*	IN	[DX]	/	OUT	[CX],	MUL	[5 × 1 = 5];
+*	IN	[DX]	/	OUT	[CX],	MUL	[5 × 2 = 10];
+*	IN	[DX]	/	OUT	[CX],	MUL	[5 × 3 = 15];
+*	IN	[DX]	/	OUT	[CX],	MUL	[5 × 4 = 20];
+*	IN	[DX]	/	OUT	[CX],	MUL	[5 × 5 = 25];
+*	IN	[DX]	/	OUT	[CX],	MUL	[5 × 6 = 30];
+*	IN	[DX]	/	OUT	[CX],	MUL	[5 × 7 = 35];
+*	IN	[DX]	/	OUT	[CX],	MUL	[5 × 8 = 40];
+*	IN	[DX]	/	OUT	[CX],	MUL	[5 × 9 = 45];
+; this line isblank
+*	IN	[AX]	/	OUT	[BX],	MUL	[6 × 0 = 0];
+*	IN	[AX]	/	OUT	[BX],	MUL	[6 × 1 = 6];
+*	IN	[AX]	/	OUT	[BX],	MUL	[6 × 2 = 12];
+*	IN	[AX]	/	OUT	[BX],	MUL	[6 × 3 = 18];
+*	IN	[AX]	/	OUT	[BX],	MUL	[6 × 4 = 24];
+*	IN	[AX]	/	OUT	[BX],	MUL	[6 × 5 = 30];
+*	IN	[AX]	/	OUT	[BX],	MUL	[6 × 6 = 36];
+*	IN	[AX]	/	OUT	[BX],	MUL	[6 × 7 = 42];
+*	IN	[AX]	/	OUT	[BX],	MUL	[6 × 8 = 48];
+*	IN	[AX]	/	OUT	[BX],	MUL	[6 × 9 = 54];
+; this line isblank
+*	IN	[DX]	/	OUT	[CX],	MUL	[7 × 0 = 0];
+*	IN	[DX]	/	OUT	[CX],	MUL	[7 × 1 = 7];
+*	IN	[DX]	/	OUT	[CX],	MUL	[7 × 2 = 14];
+*	IN	[DX]	/	OUT	[CX],	MUL	[7 × 3 = 21];
+*	IN	[DX]	/	OUT	[CX],	MUL	[7 × 4 = 28];
+*	IN	[DX]	/	OUT	[CX],	MUL	[7 × 5 = 35];
+*	IN	[DX]	/	OUT	[CX],	MUL	[7 × 6 = 42];
+*	IN	[DX]	/	OUT	[CX],	MUL	[7 × 7 = 49];
+*	IN	[DX]	/	OUT	[CX],	MUL	[7 × 8 = 56];
+*	IN	[DX]	/	OUT	[CX],	MUL	[7 × 9 = 63];
+; this line isblank
+*	IN	[DX]	/	OUT	[CX],	MUL	[8 × 0 = 0];
+*	IN	[DX]	/	OUT	[CX],	MUL	[8 × 1 = 8];
+*	IN	[DX]	/	OUT	[CX],	MUL	[8 × 2 = 16];
+*	IN	[DX]	/	OUT	[CX],	MUL	[8 × 3 = 24];
+*	IN	[DX]	/	OUT	[CX],	MUL	[8 × 4 = 32];
+*	IN	[DX]	/	OUT	[CX],	MUL	[8 × 5 = 40];
+*	IN	[DX]	/	OUT	[CX],	MUL	[8 × 6 = 48];
+*	IN	[DX]	/	OUT	[CX],	MUL	[8 × 7 = 56];
+*	IN	[DX]	/	OUT	[CX],	MUL	[8 × 8 = 64];
+*	IN	[DX]	/	OUT	[CX],	MUL	[8 × 9 = 72];
+; this line isblank
+*	IN	[AX]	/	OUT	[BX],	MUL	[9 × 0 = 0];
+*	IN	[AX]	/	OUT	[BX],	MUL	[9 × 1 = 9];
+*	IN	[AX]	/	OUT	[BX],	MUL	[9 × 2 = 18];
+*	IN	[AX]	/	OUT	[BX],	MUL	[9 × 3 = 27];
+*	IN	[AX]	/	OUT	[BX],	MUL	[9 × 4 = 36];
+*	IN	[AX]	/	OUT	[BX],	MUL	[9 × 5 = 45];
+*	IN	[AX]	/	OUT	[BX],	MUL	[9 × 6 = 54];
+*	IN	[AX]	/	OUT	[BX],	MUL	[9 × 7 = 63];
+*	IN	[AX]	/	OUT	[BX],	MUL	[9 × 8 = 72];
+*	IN	[AX]	/	OUT	[BX],	MUL	[9 × 9 = 81];
+; this line isblank
+*	IN	[DX]	/	OUT	[CX],	MUL	[10 × 0 = 0];
+*	IN	[DX]	/	OUT	[CX],	MUL	[10 × 1 = 10];
+*	IN	[DX]	/	OUT	[CX],	MUL	[10 × 2 = 20];
+*	IN	[DX]	/	OUT	[CX],	MUL	[10 × 3 = 30];
+*	IN	[DX]	/	OUT	[CX],	MUL	[10 × 4 = 40];
+*	IN	[DX]	/	OUT	[CX],	MUL	[10 × 5 = 50];
+*	IN	[DX]	/	OUT	[CX],	MUL	[10 × 6 = 60];
+*	IN	[DX]	/	OUT	[CX],	MUL	[10 × 7 = 70];
+*	IN	[DX]	/	OUT	[CX],	MUL	[10 × 8 = 80];
+*	IN	[DX]	/	OUT	[CX],	MUL	[10 × 9 = 90];
 BYTE	: INT [0000 0000], PUSH '␀'; Null
 BYTE	: INT [0000 0001], PUSH '␁'; Start of Header
 BYTE	: INT [0000 0010], PUSH '␂'; Start of Text
