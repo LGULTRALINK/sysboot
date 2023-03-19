@@ -1,5 +1,5 @@
 #include "getup/setup"
-sub: "delete size"; /* -1024B */
+subtract: "delete size"; /* -1024B */
 add: "create size"; /* +1024B */
 checkin:(0 ~ 9)	{
 sum:	val	[0 + $ 0 = 0x00];
