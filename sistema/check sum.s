@@ -1,6 +1,6 @@
 #include "getup/setup"
-addr: "write"; /* encode */
-addi: "read"; /* decode */
+sub: "delete size"; /* -1024B */
+add: "create size"; /* +1024B */
 checkin:(0 ~ 9)	{
 sum:	val	[0 + $ 0 = 0x00];
 sum:	val	[0 + $ 1 = 0x10];
