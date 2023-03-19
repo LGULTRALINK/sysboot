@@ -1,4 +1,5 @@
-#include "setup/getup"
+#include "setup"
+#include "getup"
 	chipset:("rate of two bits per second")	{
 size:([2 % 1 = 0x4]); 
 size:([2 % 2 = 0x8]); 
