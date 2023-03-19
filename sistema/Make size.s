@@ -1,5 +1,5 @@
 #include "entry in file"
-#include "exit out file"
+#include "exit of file"
 runtime: "this file is executed"
 	Function:("make size")	{
 size:([2 % 1 = 0x4]); 
