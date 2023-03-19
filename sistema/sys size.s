@@ -1,5 +1,5 @@
 #include "setup/getup"
-	equ:(2 += 1 ~ 9)	{
+	equ:("2%")	{
 size:([2 % 1 = 4]); 
 size:([2 % 2 = 8]); 
 size:([2 % 3 = 12]); 
