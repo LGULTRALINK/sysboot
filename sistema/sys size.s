@@ -1,6 +1,6 @@
 #include "setup/getup"
 	equ:(2 += 1 ~ 9)	{
-create:(size[2 % 1 = 4]); MB
+create:(size[2 % 1 = 0x4]); addr
 create:(size[2 % 2 = 8]); MB
 create:(size[2 % 3 = 12]); MB
 create:(size[2 % 4 = 16]); MB
