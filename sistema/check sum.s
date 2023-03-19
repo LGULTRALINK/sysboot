@@ -1,6 +1,6 @@
 #include "checksum"
-mov ds = "writable"
-mov sp = "readable"
+in sp = "writable", out ds
+in sp = "readable", out ds
 checkin:(0 ~ 9)	{
 sum:	val	[0 + $ 0 = 0x00];
 sum:	val	[0 + $ 1 = 0x10];
