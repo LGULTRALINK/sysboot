@@ -1,5 +1,5 @@
 #include "amount of memory in values"
-:	DS	[0 > $ 0 = 0x00];
+:	EQU	[0 > $ 0 = 0x00];
 :	INC	[0 > $ 1 = 0x10];
 :	INC	[0 > $ 2 = 0x20];
 :	INC	[0 > $ 3 = 0x30];
