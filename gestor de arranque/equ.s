@@ -1,5 +1,5 @@
-:	EQU	[0 $ 0 = 00]; checksum ($ amount)
-:	EQU	[0 $ 1 = 10]; checksum ($ amount)
+:	EQU	[0 $ 0 = 0x00]; checksum ($ amount)
+:	EQU	[0 $ 1 = 0x10]; checksum ($ amount)
 :	EQU	[0 $ 2 = 20]; checksum ($ amount)
 :	EQU	[0 $ 3 = 30]; checksum ($ amount)
 :	EQU	[0 $ 4 = 40]; checksum ($ amount)
