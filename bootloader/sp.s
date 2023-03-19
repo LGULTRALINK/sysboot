@@ -1,14 +1,14 @@
 #include "machine language"
 #include "assembly language"
-:	SP	[2 % 1 = 4]; B
-:	SP	[2 % 2 = 8]; KB
-:	SP	[2 % 3 = 12]; MB
-:	SP	[2 % 4 = 16]; GB
-:	SP	[2 % 5 = 20]; TB
-:	SP	[2 % 6 = 24]; PB
-:	SP	[2 % 7 = 28]; EB
-:	SP	[2 % 8 = 32]; ZB
-:	SP	[2 % 9 = 36]; YB
+:	SP	[2 << % 1 = 4];
+:	SP	[2 << % 2 = 8];
+:	SP	[2 << % 3 = 12];
+:	SP	[2 << % 4 = 16];
+:	SP	[2 << % 5 = 20];
+:	SP	[2 << % 6 = 24];
+:	SP	[2 << % 7 = 28];
+:	SP	[2 << % 8 = 32];
+:	SP	[2 << % 9 = 36]; 
 * this line isblank
 :	SP	[3 % 1 = 8];  B
 :	SP	[3 % 2 = 16]; KB
