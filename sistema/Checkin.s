@@ -1,5 +1,5 @@
 checkin:(equ = 2 << 1 ~ 9) {
-add_size:	[2 < 0 = 0]; err
+add_size:	[2 < 0 = 0]; nop
 add_size:	[2 < 1 = 4]; B
 add_size:	[2 < 2 = 8]; KB
 add_size:	[2 < 3 = 12]; MB
