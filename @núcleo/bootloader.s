@@ -1,7 +1,7 @@
 #include = "assembly language"
-return: "Power-Up Display"
+do "Power-Up Display"
 switch: ("Off/On");
-return: "Power-Down Display"
+do "Power-Down Display"
 switch: ("On/Off");
 add: %ebp[0 +$ 1 = 0x10], push [2 < 1 = 0x4];
 add: %esp[0 +$ 2 = 0x20], push [2 < 2 = 0x8];
