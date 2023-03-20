@@ -1,5 +1,6 @@
-#include "$val"
+#include "machine language"
 runtime: "this file is executing"
+filename: "Make sum.s"
 checkin:(0 ~ 9)	{
 sum:	[0 + $ 0 = 0x00];
 sum:	[0 + $ 1 = 0x10];
