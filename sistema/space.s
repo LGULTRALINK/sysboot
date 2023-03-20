@@ -1,6 +1,6 @@
 #include "assembly language"
-ReadOnly = "interpret data"
-WriteOnly = "print data"
+Read = "interpret data"
+Write = "print data"
 checkin:(equ = 2 >> 0 ~ 9) {
 size:	[2 % 0 = 0x0];  // NULL
 size:	[2 % 1 = 0x4];  // Byte
