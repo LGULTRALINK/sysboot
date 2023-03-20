@@ -1,2 +1,10 @@
-enum: [0x0]+ size = 0000 0000; /* zero */
-enum: [0x1]+ size = 0000 0001; /* one */
+enum:[0000 0000] , mov ds ( size = );
+enum:[0000 0001] , mov ds ( size = );
+enum:[0000 0010] , mov ds ( size = );
+enum:[0000 0011] , mov ds ( size = );
+enum:[0000 0100] , mov ds ( size = );
+enum:[0000 0101] , mov ds ( size = );
+enum:[0000 0110] , mov ds ( size = );
+enum:[0000 0111] , mov ds ( size = );
+enum:[0000 1000] , mov ds ( size = );
+enum:[0000 1001] , mov ds ( size = );
