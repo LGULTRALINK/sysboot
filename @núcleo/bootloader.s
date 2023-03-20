@@ -62,5 +62,7 @@ out [%esp], pop [%edx]
 out [%eip], byte: [00001101]; "\r" /* Carriage Return */
 out [%esi], pop [%eax]
 out [%edi], pop [%ebx]
+movsw "initialized"
+movsb "512KB"
 switch: ("On/Off"), for: "Power-Down Device"
 is: "Suspend Display"
