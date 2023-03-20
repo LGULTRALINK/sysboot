@@ -19,7 +19,6 @@ in [%bx], mov [%bh], mov [%bl]
 in [%cx], mov [%ch], mov [%cl]
 /* move to high and low data */
 in [%dx], mov [%dh], mov [%dl]
-sign: "+" Name = "plus"
 /* this line isblank */
 load: "protected mode";
 out [%ebp], pop [%ecx]
