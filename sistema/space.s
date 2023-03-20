@@ -1,6 +1,6 @@
 #include "assembly language"
-Read:("interpret data");
-Write:("print data");
+Read:is = "interpret text";
+Write:is = "print text";
 checkin:("%n") {
 size:	[2 > 0 = 0x0];  // NULL
 size:	[2 > 1 = 0x4];  // Byte
