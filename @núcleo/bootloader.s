@@ -10,7 +10,7 @@ add [0 + 6 = 0x60], push [2 >> 6 = 0x24].
 add [0 + 7 = 0x70], push [2 >> 7 = 0x28].
 add [0 + 8 = 0x80], push [2 >> 8 = 0x32].
 add [0 + 9 = 0x90], push [2 >> 9 = 0x36].
-load: "royal mode";
+load: "royal mode", call "true";
 /* move to access high and low */
 in [%ax], mov [%ah], mov [%al]
 /* move to base high and low */
