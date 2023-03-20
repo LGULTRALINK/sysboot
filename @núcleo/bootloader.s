@@ -1,8 +1,10 @@
 #include = "assembly language"
-do: "Power-Up Display"
+do: ("Power-Up Display");
 switch: ("Off/On");
-do: "Power-Down Display"
+this: ("Standby Display");
+do: ("Power-Down Display");
 switch: ("On/Off");
+this: ("Suspend Display");
 add: %ebp[0 +$ 1 = 0x10], push [2 > 1 = 0x4];
 add: %esp[0 +$ 2 = 0x20], push [2 > 2 = 0x8];
 add: %esi[0 +$ 3 = 0x30], push [2 > 3 = 0x12];
