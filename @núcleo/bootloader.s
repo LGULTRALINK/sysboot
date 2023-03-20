@@ -23,8 +23,8 @@ in [%cx], mov [%ch], mov [%cl]
 in [%dx], mov [%dh], mov [%dl]
 /* this line isblank */
 load: "protected mode";
-out [%ebp]
-out [%esp]
-out [%eip]
-out [%esi]
-out [%edi]
+out [%ebp], pop [%ecx]
+out [%esp], pop [%edx]
+out [%eip], addr = ********
+out [%esi], pop [%eax]
+out [%edi], pop [%ebx]
