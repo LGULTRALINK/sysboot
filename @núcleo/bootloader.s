@@ -1,12 +1,12 @@
-#include "assembly language"
-make: runtime = ("On") >> [+1,+2,+3,+4,+5,+6,+7,+8,9,]
-break: runtime = ("On") << [-1,-2,-3,-4,-5,-6,-7,-8,9,]
-add: %esp[],mov size = ;
-add: %ebp[],mov size = ;
-add: %esi[],mov size = ;
-add: %edi[],mov size = ;
-add: %eax[],mov size = ;
-add: %ebx[],mov size = ;
-add: %ecx[],mov size = ;
-add: %edx[],mov size = ;
-add: %eip[],mov size = ;
+##include = "assembly language"
+make: runtime = (9) >> [+1,+2,+3,+4,+5,+6,+7,+8,]
+break: runtime = (0) << [-1,-2,-3,-4,-5,-6,-7,-8,]
+add: %ebp[0 +$ 1 = 0x10],mov () ;
+add: %esp[0 +$ 2 = 0x20],mov () ;
+add: %esi[0 +$ 3 = 0x30],mov () ;
+add: %edi[0 +$ 4 = 0x40],mov () ;
+add: %eax[0 +$ 5 = 0x50],mov () ;
+add: %ebx[0 +$ 6 = 0x60],mov () ;
+add: %ecx[0 +$ 7 = 0x70],mov () ;
+add: %edx[0 +$ 8 = 0x80],mov () ;
+add: %eip[0 +$ 9 = 0x90],mov ()
