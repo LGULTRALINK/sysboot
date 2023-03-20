@@ -62,7 +62,9 @@ out [%esp], pop [%edx]
 out [%eip], byte: [00001101]; "\r" /* Carriage Return */
 out [%esi], pop [%eax]
 out [%edi], pop [%ebx]
-movsw "code reading"
-lodsw "data writing"
+/* Horizontal writing cursor */
+movsw "\p", movsb ""
+/* vertical reading cursor */
+lodsw "%p", lodsb ""
 switch: ("On/Off"), for: "Power-Down Device"
 is: "Suspend Display"
