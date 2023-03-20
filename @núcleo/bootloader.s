@@ -1,7 +1,7 @@
 ##include = "assembly language"
 make: runtime = (9) >> [+1,+2,+3,+4,+5,+6,+7,+8,]
 break: runtime = (0) << [-1,-2,-3,-4,-5,-6,-7,-8,]
-add: %ebp[0 +$ 1 = 0x10],mov () ;
+add: %ebp[0 +$ 1 = 0x10],size () ;
 add: %esp[0 +$ 2 = 0x20],mov () ;
 add: %esi[0 +$ 3 = 0x30],mov () ;
 add: %edi[0 +$ 4 = 0x40],mov () ;
