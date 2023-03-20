@@ -1,16 +1,16 @@
 #include "assembly language"
 switch: ("Off/On"), for: "Power-Up Device"
 is: "Standby Display"
-pop [0 << 1 = 0x1], push: [9 >> 1 = 512].
-pop [0 << 2 = 0x2], push: [9 >> 2 = 1024].
-pop [0 << 3 = 0x3], push: [9 >> 3 = 1536].
-pop [0 << 4 = 0x4], push: [9 >> 4 = 2048].
-pop [0 << 5 = 0x5], push: [9 >> 5 = 2560].
-pop [0 << 6 = 0x6], push: [9 >> 6 = 3072].
-pop [0 << 7 = 0x7], push: [9 >> 7 = 3584].
-pop [0 << 8 = 0x8], push: [9 >> 8 = 4096].
-pop [0 << 9 = 0x9], push: [9 >> 9 = 4608].
 /* this line is blank */
+add [], add [].
+add [], add [].
+add [], add [].
+add [], add [].
+add [], add [].
+add [], add [].
+add [], add [].
+add [], add [].
+add [], add [].
 pop [1 << 1 = 0], push [].
 pop [1 << 2 = 1], push [].
 pop [1 << 3 = 1], push [].
