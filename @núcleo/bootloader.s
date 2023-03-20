@@ -11,35 +11,6 @@ add [], add [].
 add [], add [].
 add [], add [].
 add [], add [].
-pop [1 << 1 = 0], push [].
-pop [1 << 2 = 1], push [].
-pop [1 << 3 = 1], push [].
-pop [1 << 4 = 2], push [].
-pop [1 << 5 = 2], push [].
-pop [1 << 6 = 3], push [].
-pop [1 << 7 = 3], push [].
-pop [1 << 8 = 4], push [].
-pop [1 << 9 = 4], push [].
-/* this line is blank */
-pop [2 << 1 = 0], push [].
-pop [2 << 2 = 0], push [].
-pop [2 << 3 = 0], push [].
-pop [2 << 4 = 1], push [].
-pop [2 << 5 = 1], push [].
-pop [2 << 6 = 1], push [].
-pop [2 << 7 = 1], push [].
-pop [2 << 8 = 2], push [].
-pop [2 << 9 = 2], push [].
-/* this line is blank */
-pop [3 << 1 = 0], push [].
-pop [3 << 2 = 0], push [].
-pop [3 << 3 = 0], push [].
-pop [3 << 4 = 0], push [].
-pop [3 << 5 = 0], push [].
-pop [3 << 6 = 0], push [].
-pop [3 << 7 = 0], push [].
-pop [3 << 8 = 1], push [].
-pop [3 << 9 = 1], push [].
 /* this line is blank */
 load: "royal mode", call "true";
 /* move to access high and low */
