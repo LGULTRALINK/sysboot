@@ -21,78 +21,41 @@ in [%cx], mov [%ch], mov [%cl]
 in [%dx], mov [%dh], mov [%dl]
 /* this line isblank */
 load: "protected mode";
-out [%ebp], pop [%ecx]
-out [%esp], pop [%edx]
-out [%eip], byte: [00000000]; NUL /* Null */
-out [%esi], pop [%eax]
-out [%edi], pop [%ebx]
-out [%ebp], pop [%ecx]
-out [%esp], pop [%edx]
-out [%eip], byte: [00000001]; SOH /* Start of Header */
-out [%esi], pop [%eax]
-out [%edi], pop [%ebx]
-out [%ebp], pop [%ecx]
-out [%esp], pop [%edx]
-out [%eip], byte: [00000010]; STX /* Start of Text */
-out [%esi], pop [%eax]
-out [%edi], pop [%ebx]
-out [%ebp], pop [%ecx]
-out [%esp], pop [%edx]
-out [%eip], byte: [00000011]; ETX /* End of Text  */
-out [%esi], pop [%eax]
-out [%edi], pop [%ebx]
-out [%ebp], pop [%ecx]
-out [%esp], pop [%edx]
-out [%eip], byte: [00000100]; EOT /* End of Transmission  */
-out [%esi], pop [%eax]
-out [%edi], pop [%ebx]
-out [%ebp], pop [%ecx]
-out [%esp], pop [%edx]
-out [%eip], byte: [00000101]; ENQ /* Enquiry */
-out [%esi], pop [%eax]
-out [%edi], pop [%ebx]
-out [%ebp], pop [%ecx]
-out [%esp], pop [%edx]
-out [%eip], byte: [00000110]; ACK /* Acknowledge  */
-out [%esi], pop [%eax]
-out [%edi], pop [%ebx]
-out [%ebp], pop [%ecx]
-out [%esp], pop [%edx]
-out [%eip], byte: [00000111]; BEL /* Bell */
+out [%eip], byte: [00000111]; "\a" /* Bell */
 out [%esi], pop [%eax]
 out [%edi], pop [%ebx]
 out [%esi], pop [%eax]
 out [%edi], pop [%ebx]
 out [%ebp], pop [%ecx]
 out [%esp], pop [%edx]
-out [%eip], byte: [00001000]; BS /* BackSpace */
+out [%eip], byte: [00001000]; "\b" /* BackSpace */
 out [%esi], pop [%eax]
 out [%edi], pop [%ebx]
 out [%ebp], pop [%ecx]
 out [%esp], pop [%edx]
-out [%eip], byte: [00001001]; HT /* Horizontal Tabulation */
+out [%eip], byte: [00001001]; "\t" /* Horizontal Tabulation */
 out [%esi], pop [%eax]
 out [%edi], pop [%ebx]
 out [%ebp], pop [%ecx]
 out [%esp], pop [%edx]
-out [%eip], byte: [00001010]; LF /* Line Feed  */
+out [%eip], byte: [00001010]; "\n" /* Line Feed  */
 out [%esi], pop [%eax]
 out [%edi], pop [%ebx]
 out [%ebp], pop [%ecx]
 out [%esp], pop [%edx]
-out [%eip], byte: [00001011]; VT /* Vertical Tabulation */
+out [%eip], byte: [00001011]; "\v" /* Vertical Tabulation */
 out [%esi], pop [%eax]
 out [%edi], pop [%ebx]
 out [%ebp], pop [%ecx]
 out [%esp], pop [%edx]
-out [%eip], byte: [00001100]; FF /* Form Feed */
+out [%eip], byte: [00001100]; "\f" /* Form Feed */
 out [%esi], pop [%eax]
 out [%edi], pop [%ebx]
 out [%esi], pop [%eax]
 out [%edi], pop [%ebx]
 out [%ebp], pop [%ecx]
 out [%esp], pop [%edx]
-out [%eip], byte: [00001101]; CR /* Carriage Return */
+out [%eip], byte: [00001101]; "\r" /* Carriage Return */
 out [%esi], pop [%eax]
 out [%edi], pop [%ebx]
 switch: ("On/Off"), for: "Power-Down Device"
