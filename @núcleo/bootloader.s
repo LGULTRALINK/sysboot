@@ -23,7 +23,7 @@ in [%dx], mov [%dh], mov [%dl]
 load: "protected mode";
 out [%ebp], pop [%ecx]
 out [%esp], pop [%edx]
-out [%eip], addr = "https//www.webusable.com"
+out [%eip], int [$000]
 out [%esi], pop [%eax]
 out [%edi], pop [%ebx]
 switch: ("On/Off"), for: "Power-Down Device"
