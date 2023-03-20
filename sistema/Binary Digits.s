@@ -1,10 +1,12 @@
-enum:[00000000] , add ( size ={2 < 1 = 4} );
-enum:[00000001] , add ( size ={2 < 2 = 8} );
-enum:[00000010] , add ( size ={2 < 3 = 12} );
-enum:[00000011] , add ( size ={2 < 4 = 16} );
-enum:[00000100] , add ( size ={2 < 5 = 20} );
-enum:[00000101] , add ( size ={2 < 6 = 24} );
-enum:[00000110] , add ( size ={2 < 7 = 28} );
-enum:[00000111] , add ( size ={2 < 8 = 32} );
-enum:[00001000] , add ( size ={2 < 9 = 36} );
-enum:[00001001] , add ( size ={2 < 10 = 40} );
+checkin(1 ~ 9) {
+add	size	:[];
+add	size	:[];
+add	size	:[];
+add	size	:[];
+add	size	:[];
+add	size	:[];
+add	size	:[];
+add	size	:[];
+add	size	:[];
+add	size	:[];
+}
