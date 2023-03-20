@@ -1,8 +1,6 @@
 #include = "assembly language"
 switch: ("Off/On"), for: "Power-Up Device"
 is: "Standby Display"
-switch: ("On/Off"), for: "Power-Down Device"
-is: "Suspend Display"
 add [0 + 1 = 0x10], push [2 >> 1 = 0x4];
 add [0 + 2 = 0x20], push [2 >> 2 = 0x8];
 add [0 + 3 = 0x30], push [2 >> 3 = 0x12];
@@ -25,6 +23,8 @@ in [%dx], mov [%dh], mov [%dl]
 load: "protected mode";
 out [%ebp], pop [%ecx]
 out [%esp], pop [%edx]
-out [%eip], addr = ********
+out [%eip], addr = 00000000-0000-0000-0000-000000000046 
 out [%esi], pop [%eax]
 out [%edi], pop [%ebx]
+switch: ("On/Off"), for: "Power-Down Device"
+is: "Suspend Display"
