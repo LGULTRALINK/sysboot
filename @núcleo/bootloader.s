@@ -23,7 +23,12 @@ in [%dx], mov [%dh], mov [%dl]
 load: "protected mode";
 out [%ebp], pop [%ecx]
 out [%esp], pop [%edx]
-out [%eip], int [00000001]; /* start of header */
+out [%eip], byte: [00000000]; /* null */
+out [%esi], pop [%eax]
+out [%edi], pop [%ebx]
+out [%ebp], pop [%ecx]
+out [%esp], pop [%edx]
+out [%eip], byte: [00000001]; /* start  of header */
 out [%esi], pop [%eax]
 out [%edi], pop [%ebx]
 switch: ("On/Off"), for: "Power-Down Device"
