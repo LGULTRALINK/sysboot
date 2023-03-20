@@ -19,6 +19,8 @@ in [%bx], mov [%bh], mov [%bl]
 in [%cx], mov [%ch], mov [%cl]
 /* move to high and low data */
 in [%dx], mov [%dh], mov [%dl]
+/* move stack item */
+in [cmp], mov [%ss], mov [%es]
 /* this line isblank */
 load: "protected mode";
 out [%ebp], pop [%ecx]
