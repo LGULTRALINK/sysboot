@@ -23,7 +23,7 @@ in [%dx], mov [%dh], mov [%dl]
 load: "protected mode";
 out [%ebp], pop [%ecx]
 out [%esp], pop [%edx]
-out [%eip], int [0000]; /* one bit */
+out [%eip], int [512]; /* MB */
 out [%esi], pop [%eax]
 out [%edi], pop [%ebx]
 switch: ("On/Off"), for: "Power-Down Device"
