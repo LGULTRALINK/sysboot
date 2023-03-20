@@ -1,8 +1,8 @@
 #include = "assembly language"
-switch: ("Off/On"), doing: "Standby Display"
+switch: ("Off/On"), do: "Standby Display"
 is: "Power-Up Device"
-switch: ("On/Off"), doing: "Suspend Display"
-is "Power-Down Device"
+switch: ("On/Off"), do: "Suspend Display"
+is: "Power-Down Device"
 add: %ebp[0 +$ 1 = 0x10], push [2 > 1 = 0x4];
 add: %esp[0 +$ 2 = 0x20], push [2 > 2 = 0x8];
 add: %esi[0 +$ 3 = 0x30], push [2 > 3 = 0x12];
