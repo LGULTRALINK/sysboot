@@ -19,8 +19,11 @@ in [%bx], mov [%bh], mov [%bl]
 in [%cx], mov [%ch], mov [%cl]
 /* move to high and low data */
 in [%dx], mov [%dh], mov [%dl]
+sign: "+EIRQ6"
 /* this line isblank */
 load: "protected mode";
+out [%ebp], pop [%ecx]
+out [%esp], pop [%edx]
 out [%eip], byte: [00000111]; "\a" /* Bell */
 out [%esi], pop [%eax]
 out [%edi], pop [%ebx]
