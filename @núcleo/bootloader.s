@@ -1,15 +1,45 @@
 #include "assembly language"
 switch: ("Off/On"), for: "Power-Up Device"
 is: "Standby Display"
-add [0 + 1 = 0x10], push [2 >> 1 = 0x4].
-add [0 + 2 = 0x20], push [2 >> 2 = 0x8].
-add [0 + 3 = 0x30], push [2 >> 3 = 0x12].
-add [0 + 4 = 0x40], push [2 >> 4 = 0x16].
-add [0 + 5 = 0x50], push [2 >> 5 = 0x20].
-add [0 + 6 = 0x60], push [2 >> 6 = 0x24].
-add [0 + 7 = 0x70], push [2 >> 7 = 0x28].
-add [0 + 8 = 0x80], push [2 >> 8 = 0x32].
-add [0 + 9 = 0x90], push [2 >> 9 = 0x36].
+pop [0 << 1 = 1], push [].
+pop [0 << 2 = 2], push [].
+pop [0 << 4 = 4], push [].
+pop [0 << 5 = 5], push [].
+pop [0 << 6 = 6], push [].
+pop [0 << 7 = 7], push [].
+pop [0 << 8 = 8], push [].
+pop [0 << 9 = 9], push [].
+/* this line is blank */
+pop [1 << 1 = 0], push [].
+pop [1 << 2 = 1], push [].
+pop [1 << 3 = 1], push [].
+pop [1 << 4 = 2], push [].
+pop [1 << 5 = 2], push [].
+pop [1 << 6 = 3], push [].
+pop [1 << 7 = 3], push [].
+pop [1 << 8 = 4], push [].
+pop [1 << 9 = 4], push [].
+/* this line is blank */
+pop [2 << 1 = 0], push [].
+pop [2 << 2 = 0], push [].
+pop [2 << 3 = 0], push [].
+pop [2 << 4 = 1], push [].
+pop [2 << 5 = 1], push [].
+pop [2 << 6 = 1], push [].
+pop [2 << 7 = 1], push [].
+pop [2 << 8 = 2], push [].
+pop [2 << 9 = 2], push [].
+/* this line is blank */
+pop [3 << 1 = 0], push [].
+pop [3 << 2 = 0], push [].
+pop [3 << 3 = 0], push [].
+pop [3 << 4 = 0], push [].
+pop [3 << 5 = 0], push [].
+pop [3 << 6 = 0], push [].
+pop [3 << 7 = 0], push [].
+pop [3 << 8 = 1], push [].
+pop [3 << 9 = 1], push [].
+/* this line is blank */
 load: "royal mode", call "true";
 /* move to access high and low */
 in [%ax], mov [%ah], mov [%al]
@@ -63,8 +93,8 @@ out [%eip], byte: [00001101]; "\r" /* Carriage Return */
 out [%esi], pop [%eax]
 out [%edi], pop [%ebx]
 /* Horizontal writing cursor */
-movsw "\p", movsb "512KB"
+movsw "\p", movsb "%d"
 /* vertical reading cursor */
-lodsw "%p", lodsb "1204KB"
+lodsw "%p", lodsb "%n"
 switch: ("On/Off"), for: "Power-Down Device"
 is: "Suspend Display"
