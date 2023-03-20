@@ -63,8 +63,8 @@ out [%eip], byte: [00001101]; "\r" /* Carriage Return */
 out [%esi], pop [%eax]
 out [%edi], pop [%ebx]
 /* Horizontal writing cursor */
-movsw "\p", movsb ""
+movsw "\p", movsb "512KB"
 /* vertical reading cursor */
-lodsw "%p", lodsb ""
+lodsw "%p", lodsb "1204KB"
 switch: ("On/Off"), for: "Power-Down Device"
 is: "Suspend Display"
