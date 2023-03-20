@@ -1,4 +1,4 @@
-enum:[00000000] , add ax ( size ={} );
+enum:[00000000] , add ds ( size ={} );
 enum:[00000001] , inc ds ( size ={} );
 enum:[00000010] , inc ds ( size ={} );
 enum:[00000011] , inc ds ( size ={} );
