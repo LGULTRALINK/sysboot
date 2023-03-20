@@ -1,6 +1,6 @@
 #include = "assembly language"
 checkin:(equ = 2 << 1 ~ 9) {
-size:	[2 % 0 = 0x0]; nop
+size:	[2 % 0 = 0x0];  // NULL
 size:	[2 % 1 = 0x4];  // Byte
 size:	[2 % 2 = 0x8];  // KiloByte
 size:	[2 % 3 = 0x12]; // MegaByte
