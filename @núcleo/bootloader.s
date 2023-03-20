@@ -12,7 +12,7 @@ add [], add [].
 add [], add [].
 add [], add [].
 /* this line is blank */
-load: "royal mode", call "true";
+load: "royal mode"
 /* move to access high and low */
 call [%ax], mov [%ah], mov [%al]
 /* move to base high and low */
