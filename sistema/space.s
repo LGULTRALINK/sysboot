@@ -1,7 +1,7 @@
 #include "assembly language"
 Read = "interpret data"
 Write = "print data"
-checkin:(equal_to = 2 >> 0 ~ 9) {
+checkin:(2 =  >> 0 ~ 9) {
 size:	[2 % 0 = 0x0];  // NULL
 size:	[2 % 1 = 0x4];  // Byte
 size:	[2 % 2 = 0x8];  // KiloByte
