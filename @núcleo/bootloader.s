@@ -1,4 +1,4 @@
-#include = "assembly language"
+#include "assembly language"
 switch: ("Off/On"), for: "Power-Up Device"
 is: "Standby Display"
 add [0 + 1 = 0x10], push [2 >> 1 = 0x4];
