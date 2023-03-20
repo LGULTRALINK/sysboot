@@ -13,7 +13,7 @@ add: %ecx[0 + 7 = 0x70], push [2 >> 7 = 0x28];
 add: %edx[0 + 8 = 0x80], push [2 >> 8 = 0x32];
 add: %eip[0 + 9 = 0x90], push [2 >> 9 = 0x36];
 load: "royal mode"
-mov: %ax [%ah],[%al]
+mov: %ax [%ah]/* high access */ mov [%al] /* low access*/
 mov: %bx [%bh],[%bl]
 mov: %cx [%ch],[%cl]
 mov: %dx [%dh],[%dl]
