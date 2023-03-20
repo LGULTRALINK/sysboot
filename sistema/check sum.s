@@ -1,4 +1,5 @@
 #include "getup/setup"
+runtime: "this file is exec"
 checkin:(0 ~ 9)	{
 sum:	val	[0 + $ 0 = 0x00];
 sum:	val	[0 + $ 1 = 0x10];
