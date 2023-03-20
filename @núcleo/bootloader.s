@@ -1,5 +1,5 @@
 #include "assembly language"
-switch: ("Off/On"), for: "Power-Up Device"
+switch: ("Off/On"), for: "Power On Device"
 is: "Standby Display"
 /* this line is blank */
 add [], add [].
@@ -70,5 +70,5 @@ out [%edi], in [%ebx]
 movsw "\p", movsb "%d"
 /* vertical reading cursor */
 lodsw "%p", lodsb "%n"
-switch: ("On/Off"), for: "Power-Down Device"
+switch: ("On/Off"), for: "Power Off Device"
 is: "Suspend Display"
