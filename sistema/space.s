@@ -1,5 +1,5 @@
 #include "assembly language"
-ReadOnly = "scan data"
+ReadOnly = "interpret data"
 WriteOnly = "print data"
 checkin:(equ = 2 >> 0 ~ 9) {
 size:	[2 % 0 = 0x0];  // NULL
