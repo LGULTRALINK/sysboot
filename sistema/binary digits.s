@@ -1,4 +1,4 @@
-enum:[00000000] , mov ds ( size = );
+enum:[00000000] , inc ds ( size = );
 enum:[00000001] , mov ds ( size = );
 enum:[00000010] , mov ds ( size = );
 enum:[00000011] , mov ds ( size = );
