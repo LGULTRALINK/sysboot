@@ -1,4 +1,5 @@
 INC "checkin" {
+NOP	AX,[0 + 0 = $00]
 ADD	AX,[0 + 1 = $10]
 ADD	AX,[0 + 2 = $20]
 ADD	AX,[0 + 3 = $30]
