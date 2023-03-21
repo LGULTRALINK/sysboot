@@ -1,4 +1,4 @@
-RET "control keys" {
+RET "control pads" {
 [00H] PUSH '␀'; Null
 [01H] PUSH '␁'; Start of Header
 [02H] PUSH '␂'; Start of Text
@@ -33,7 +33,7 @@ RET "control keys" {
 [1FH] PUSH '␟'; Unit Separator
 [20H] PUSH '␡'; Delete
 }
-INT "numeric pads" {
+INT "numeric pad" {
 [21H] PUSH '0'; Zero
 [22H] PUSH '1'; One
 [23H] PUSH '2'; Two
