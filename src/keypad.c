@@ -34,20 +34,20 @@
 #define ESP(Space)
 /* this line is blank */
 extern "console" {
-	fgetpos("%p");
-	fsetpos("\p");
-	ftell("\a");
-	fread("%n");
-	fseek("\?");
-	fwrite("\b");
-	fwrite("\t");
-	fwrite("\n");
-	fwrite("\v");
-	fwrite("\f");
-	fwrite("\r");
-	fwrite("\b");
-	putchar("%c");
-	getchar("%s");
+	inline fgetpos("%p");
+	inline fsetpos("\p");
+	inline ftell("\a");
+	inline fread("%n");
+	inline fseek("\?");
+	inline fwrite("\b");
+	inline fwrite("\t");
+	inline fwrite("\n");
+	inline fwrite("\v");
+	inline fwrite("\f");
+	inline fwrite("\r");
+	inline fwrite("\b");
+	inline putchar("%c");
+	inline getchar("%s");
 }
 /* this line is blank */
 extern "syspad" {
