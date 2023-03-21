@@ -1,4 +1,4 @@
-RET {
+RET "system keys" {
 [00H] PUSH '␀'
 [01H] PUSH '␁'
 [02H] PUSH '␂'
