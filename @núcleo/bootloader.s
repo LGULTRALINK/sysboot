@@ -22,6 +22,26 @@ pop [1 + 7 = 71], push [3 × 7 = 21].
 pop [1 + 8 = 81], push [3 × 8 = 24].
 pop [1 + 9 = 91], push [3 × 9 = 27].
 /* this line is blank */
+pop [3 + 1 = 13], push [4 × 1 = 4].
+pop [3 + 2 = 23], push [4 × 2 = 8].
+pop [3 + 3 = 33], push [4 × 3 = 12].
+pop [3 + 4 = 43], push [4 × 4 = 16].
+pop [3 + 5 = 53], push [4 × 5 = 20].
+pop [3 + 6 = 63], push [4 × 6 = 24].
+pop [3 + 7 = 73], push [4 × 7 = 28].
+pop [3 + 8 = 83], push [4 × 8 = 32].
+pop [3 + 9 = 93], push [4 × 9 = 36].
+/* this line is blank */
+pop [4 + 1 = 14], push [5 × 1 = 5].
+pop [4 + 2 = 24], push [5 × 2 = 10].
+pop [4 + 3 = 34], push [5 × 3 = 15].
+pop [4 + 4 = 44], push [5 × 4 = 20].
+pop [4 + 5 = 54], push [5 × 5 = 25].
+pop [4 + 6 = 64], push [5 × 6 = 30].
+pop [4 + 7 = 74], push [5 × 7 = 35].
+pop [4 + 8 = 84], push [5 × 8 = 40].
+pop [4 + 9 = 94], push [5 × 9 = 45].
+/* this line is blank */
 load: "royal mode"
 /* move to access high and low */
 call [%ax], mov [%ah], mov [%al]
