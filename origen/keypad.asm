@@ -1,4 +1,4 @@
-RET "control pads" {
+INT "control pads" {
 [00H] PUSH '␀'; Null
 [01H] PUSH '␁'; Start of Header
 [02H] PUSH '␂'; Start of Text
@@ -55,5 +55,5 @@ INT "graphic pads" {
 [31H] PUSH '▒'; Medium shade
 [32H] PUSH '▓'; Dark shade
 }
-DO LOCK "lock numeric keypad"
+LOCK "lock numeric keypad"
 NOT LOCK "unlock numeric keypad"
