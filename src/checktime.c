@@ -1,4 +1,4 @@
-extern "time" {
+extern "clock" {
 	int(for gets = 59++),
 	int(for gets = 59++),
 	int(for gets = 23++),
