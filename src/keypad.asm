@@ -1,82 +1,47 @@
 RET "control keys" {
-[00H] PUSH '␀'
-[01H] PUSH '␁'
-[02H] PUSH '␂'
-[03H] PUSH '␃'
-[04H] PUSH '␄'
-[05H] PUSH '␅'
-[06H] PUSH '␆'
-[07H] PUSH '␇'
-[08H] PUSH '␈'
-[09H] PUSH '␉'
-[0AH] PUSH '␊'
-[0BH] PUSH '␋'
-[0CH] PUSH '␌'
-[0DH] PUSH '␍'
-[0EH] PUSH '␎'
-[0FH] PUSH '␏'
-[10H] PUSH '␐'
-[11H] PUSH '␑'
-[12H] PUSH '␒'
-[13H] PUSH '␓'
-[14H] PUSH '␔'
-[15H] PUSH '␕'
-[16H] PUSH '␖'
-[17H] PUSH '␗'
-[18H] PUSH '␘'
-[19H] PUSH '␙'
-[1AH] PUSH '␚'
-[1BH] PUSH '␛'
-[1CH] PUSH '␜'
-[1DH] PUSH '␝'
-[1EH] PUSH '␞'
-[1FH] PUSH '␟'
-[20H] PUSH '␡'
+[00H] PUSH '␀'; Null
+[01H] PUSH '␁'; Start of Header
+[02H] PUSH '␂'; Start of Text
+[03H] PUSH '␃'; End of Text
+[04H] PUSH '␄'; End of Transmission
+[05H] PUSH '␅'; Enquiry
+[06H] PUSH '␆'; Acknowledge
+[07H] PUSH '␇'; Bell
+[08H] PUSH '␈'; BackSpace
+[09H] PUSH '␉'; Horizontal Tabulation
+[0AH] PUSH '␊'; Line Feed
+[0BH] PUSH '␋'; Vertical Tabulation
+[0CH] PUSH '␌'; Form Feed
+[0DH] PUSH '␍'; Carriage Return
+[0EH] PUSH '␎'; Shift Out
+[0FH] PUSH '␏'; Shift In
+[10H] PUSH '␐'; Data Link Escape
+[11H] PUSH '␑'; Device Control 1
+[12H] PUSH '␒'; Device Control 2
+[13H] PUSH '␓'; Device Control 3
+[14H] PUSH '␔'; Device Control 4
+[15H] PUSH '␕'; Negative Acknowledge
+[16H] PUSH '␖'; Synchronous Idle
+[17H] PUSH '␗'; End of Transmission Block
+[18H] PUSH '␘'; Cancel
+[19H] PUSH '␙'; End of Medium
+[1AH] PUSH '␚'; Substitute
+[1BH] PUSH '␛'; Escape
+[1CH] PUSH '␜'; File Separator
+[1DH] PUSH '␝'; Group Separator
+[1EH] PUSH '␞'; Record Separator
+[1FH] PUSH '␟'; Unit Separator
+[20H] PUSH '␡'; Delete
 }
 RET "numeric keys" {
-[21H] PUSH '0'
-[22H] PUSH '1'
-[23H] PUSH '2'
-[24H] PUSH '3'
-[25H] PUSH '4'
-[26H] PUSH '5'
-[27H] PUSH '6'
-[28H] PUSH '7'
-[29H] PUSH '8'
-[2AH] PUSH '9'
-}
-RET "math keys" {
-[2BH] PUSH '+'
-[2CH] PUSH '×'
-[2DH] PUSH '÷'
-[2EH] PUSH '-'
-[2FH] PUSH '='
-[30H] PUSH '<'
-[31H] PUSH '>'
-[32H] PUSH '%'
-[33H] PUSH '∑'
-[34H] PUSH '√'
-[35H] PUSH '∞'
-[36H] PUSH '∧'
-[37H] PUSH '∨'
-[38H] PUSH '≤'
-[39H] PUSH '≥'
-[3AH] PUSH '⌐'
-[3BH] PUSH '¬'
-[3CH] PUSH '±'
-[3DH] PUSH '/'
-[3EH] PUSH '*'
-[3FH] PUSH '#'
-}
-RET "arrows keys"
-[40H] PUSH '←'
-[41H] PUSH '↑'
-[42H] PUSH '→'
-[43H] PUSH '↓'
-[44H] PUSH '↔'
-[45H] PUSH '↕'
-[46H] PUSH '↨'
-[47H] PUSH '↩'
-[48H] PUSH '↪'
-[49H] PUSH '↵'
+[21H] PUSH '0'; Zero
+[22H] PUSH '1'; One
+[23H] PUSH '2'; Two
+[24H] PUSH '3'; Three
+[25H] PUSH '4'; Four
+[26H] PUSH '5'; Five
+[27H] PUSH '6'; Six
+[28H] PUSH '7'; Seven
+[29H] PUSH '8'; Eight
+[2AH] PUSH '9'; Nine
 }
