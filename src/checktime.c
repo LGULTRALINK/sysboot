@@ -2,7 +2,7 @@ extern "clock" {
 	int(for gets = 59++),
 	int(for gets = 59++),
 	int(for gets = 23++),
-	return printf("HH" : "MM" : "SS");
+	else if printf("HH" : "MM" : "SS");
 }
 extern "weekdays" {
 	int(0):: typedef NULL,
@@ -13,7 +13,7 @@ extern "weekdays" {
 	int(5):: typedef "Thursday",
 	int(6):: typedef "Friday",
 	int(7):: typedef "Saturday",
-	while scanf("%n" == puts[]);
+	while scanf("%n" == gets[7++]);
 }
 extern "months" {
 	int(0):: typedef NULL
@@ -29,6 +29,6 @@ extern "months" {
 	int(10):: typedef "October",
 	int(11):: typedef "November",
 	int(12):: typedef "December",
-	while scanf("%n" == puts[]),
+	while scanf("%n" == gets[12++]),
 	else if printf("DDD" / "MMM" / "YYY");
 }
