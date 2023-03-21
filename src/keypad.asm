@@ -1,5 +1,5 @@
 RET {
-[00H] PUSH '␀'; null
+[00H] PUSH '␀'
 [01H] PUSH '␁'
 [02H] PUSH '␂'
 [03H] PUSH '␃'
@@ -32,4 +32,31 @@ RET {
 [1EH] PUSH '␞'
 [1FH] PUSH '␟'
 [20H] PUSH '␡'
+}
+RET "numeric keys" {
+[21H] PUSH '0'
+[22H] PUSH '1'
+[23H] PUSH '2'
+[24H] PUSH '3'
+[25H] PUSH '4'
+[26H] PUSH '5'
+[27H] PUSH '6'
+[28H] PUSH '7'
+[29H] PUSH '8'
+[2AH] PUSH '9'
+[2BH] PUSH '+'
+[2CH] PUSH '×'
+[2DH] PUSH '÷'
+[2EH] PUSH '-'
+[2FH] PUSH '='
+[30H] PUSH '<'
+[31H] PUSH '>'
+[32H] PUSH '%'
+[33H] PUSH '&'
+[34H] PUSH '*'
+[35H] PUSH '#'
+[36H] PUSH '@'
+[37H] PUSH '$'
+[38H] PUSH '^'
+[39H] PUSH '~'
 }
