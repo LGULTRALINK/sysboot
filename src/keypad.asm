@@ -1,4 +1,4 @@
-RET "system keys" {
+RET "control keys" {
 [00H] PUSH '␀'
 [01H] PUSH '␁'
 [02H] PUSH '␂'
@@ -44,6 +44,8 @@ RET "numeric keys" {
 [28H] PUSH '7'
 [29H] PUSH '8'
 [2AH] PUSH '9'
+}
+RET "symbolic keys" {
 [2BH] PUSH '+'
 [2CH] PUSH '×'
 [2DH] PUSH '÷'
