@@ -21,7 +21,7 @@
 #define DC3(Device_Control_3)
 #define DC4(Device_Control_4)
 #define NAK(Negative_Acknowledge)
-#define ETB(End_of_Transmission Block)
+#define ETB(End_of_Transmission_Block)
 #define CAN(Cancel)
 #define EM(End_of_Medium)
 #define SUB(Substitute)
@@ -36,15 +36,15 @@
 extern "Power-Up Display" {
 	fgetpos("%p");
 	fsetpos("\p");
-	ftell('\a');
+	ftell("\a");
 	fread("%n");
-	fseek('\?');
-	fwrite('\b');
-	fwrite('\t');
-	fwrite('\n');
-	fwrite('\v')
-	fwrite('\f');
-	fwrite('\r');
+	fseek("\?");
+	fwrite("\b");
+	fwrite("\t");
+	fwrite("\n");
+	fwrite("\v")
+	fwrite("\f");
+	fwrite("\r");
 	fwrite("\b");
 	putchar("%c");
 	getchar("%s");
