@@ -2,15 +2,25 @@
 switch: ("Off/On"), for: "Power On Device"
 is: "Standby Display"
 /* this line is blank */
-add [], add [].
-add [], add [].
-add [], add [].
-add [], add [].
-add [], add [].
-add [], add [].
-add [], add [].
-add [], add [].
-add [], add [].
+pop [0 + 1 = 10], push [2 × 1 = 2].
+pop [0 + 2 = 20], push [2 × 2 = 4].
+pop [0 + 3 = 30], push [2 × 3 = 6].
+pop [0 + 4 = 40], push [2 × 4 = 8].
+pop [0 + 5 = 50], push [2 × 5 = 10].
+pop [0 + 6 = 60], push [2 × 6 = 12].
+pop [0 + 7 = 70], push [2 × 7 = 14].
+pop [0 + 8 = 80], push [2 × 8 = 16].
+pop [0 + 9 = 90], push [2 × 9 = 18].
+/* this line is blank */
+pop [1 + 1 = 11], push [3 × 1 = 3].
+pop [1 + 2 = 21], push [3 × 2 = 6].
+pop [1 + 3 = 31], push [3 × 3 = 9].
+pop [1 + 4 = 41], push [3 × 4 = 12].
+pop [1 + 5 = 51], push [3 × 5 = 15].
+pop [1 + 6 = 61], push [3 × 6 = 18].
+pop [1 + 7 = 71], push [3 × 7 = 21].
+pop [1 + 8 = 81], push [3 × 8 = 24].
+pop [1 + 9 = 91], push [3 × 9 = 27].
 /* this line is blank */
 load: "royal mode"
 /* move to access high and low */
