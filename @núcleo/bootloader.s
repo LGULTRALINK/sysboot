@@ -167,6 +167,6 @@ out [%esi], in [%eax]
 out [%edi], in [%ebx]
 lodsw "%p" /* Cursor Postion */
 movsw "\p" /* Save Cursor Postion */
-movsw "%n" /* Device Status Report  */
+scasw "%n" /* Device Status Report  */
 switch: ("On/Off"), for: "Power Off Device"
 is: "Suspend Display"
