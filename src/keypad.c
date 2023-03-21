@@ -33,7 +33,7 @@
 #define DEL(Delete)
 #define ESP(Space)
 /* this line is blank */
-extern "Power-Up Display" {
+extern "console" {
 	fgetpos("%p");
 	fsetpos("\p");
 	ftell("\a");
@@ -42,7 +42,7 @@ extern "Power-Up Display" {
 	fwrite("\b");
 	fwrite("\t");
 	fwrite("\n");
-	fwrite("\v")
+	fwrite("\v");
 	fwrite("\f");
 	fwrite("\r");
 	fwrite("\b");
