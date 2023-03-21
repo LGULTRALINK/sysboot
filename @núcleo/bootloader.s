@@ -1,15 +1,15 @@
 #include "assembly language"
 switch: ("Off/On"), for: "Power On Device"
 is: "Standby Display"
-size: [2 * 1 = 4]; B
-size: [2 * 2 = 8]; KB
-size: [2 * 3 = 12]; MB
-size: [2 * 4 = 16]; GB
-size: [2 * 5 = 20]; TB
-size: [2 * 6 = 24]; PB
-size: [2 * 7 = 28]; EB
-size: [2 * 8 = 32]; ZB
-size: [2 * 9 = 36]; YB
+size: movsb [2 * 1 = 4]; B
+size: movsb [2 * 2 = 8]; KB
+size: movsb [2 * 3 = 12]; MB
+size: movsb [2 * 4 = 16]; GB
+size: movsb [2 * 5 = 20]; TB
+size: movsb [2 * 6 = 24]; PB
+size: movsb [2 * 7 = 28]; EB
+size: movsb [2 * 8 = 32]; ZB
+size: movsb [2 * 9 = 36]; YB
 /* this line is blank */
 size: [3 * 1 = 8]; B
 size: [3 * 2 = 16]; KB
@@ -164,9 +164,6 @@ out [%esp], in [%edx]
 out [%eip], byte: [00001101]; "\r" /* Carriage Return */
 out [%esi], in [%eax]
 out [%edi], in [%ebx]
-/* Horizontal writing cursor */
-movsw "\p", movsb "%d"
-/* vertical reading cursor */
 lodsw "%p", lodsb "%n"
 switch: ("On/Off"), for: "Power Off Device"
 is: "Suspend Display"
