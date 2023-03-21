@@ -1,15 +1,15 @@
 #include "assembly language"
 switch: ("Off/On"), for: "Power On Device"
 is: "Standby Display"
-size: movsb [2 * 1 = 4]; B
-size: movsb [2 * 2 = 8]; KB
-size: movsb [2 * 3 = 12]; MB
-size: movsb [2 * 4 = 16]; GB
-size: movsb [2 * 5 = 20]; TB
-size: movsb [2 * 6 = 24]; PB
-size: movsb [2 * 7 = 28]; EB
-size: movsb [2 * 8 = 32]; ZB
-size: movsb [2 * 9 = 36]; YB
+size: movsb [2 >> 1 = 4]; B
+size: movsb [2 >> 2 = 8]; KB
+size: movsb [2 >> 3 = 12]; MB
+size: movsb [2 >> 4 = 16]; GB
+size: movsb [2 >> 5 = 20]; TB
+size: movsb [2 >> 6 = 24]; PB
+size: movsb [2 >> 7 = 28]; EB
+size: movsb [2 >> 8 = 32]; ZB
+size: movsb [2 >> 9 = 36]; YB
 /* this line is blank */
 size: [3 * 1 = 8]; B
 size: [3 * 2 = 16]; KB
