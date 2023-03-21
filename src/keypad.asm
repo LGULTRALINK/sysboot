@@ -61,4 +61,10 @@ RET "symbolic keys" {
 [37H] PUSH '$'
 [38H] PUSH '^'
 [39H] PUSH '~'
+[3AH] PUSH '('
+[3BH] PUSH ')'
+[3CH] PUSH '/'
+[3DH] PUSH '\'
+[3EH] PUSH '['
+[3FH] PUSH ']'
 }
