@@ -1,4 +1,3 @@
-#include "exact elapsed time"
 #define SS(second)
 #define MM(minute)
 #define HH(hour)
