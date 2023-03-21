@@ -45,7 +45,7 @@ RET "numeric keys" {
 [29H] PUSH '8'
 [2AH] PUSH '9'
 }
-RET "symbolic keys" {
+RET "math keys" {
 [2BH] PUSH '+'
 [2CH] PUSH '×'
 [2DH] PUSH '÷'
@@ -68,7 +68,7 @@ RET "symbolic keys" {
 [3EH] PUSH '*'
 [3FH] PUSH '#'
 }
-RET "arrow keys"
+RET "arrows keys"
 [40H] PUSH '←'
 [41H] PUSH '↑'
 [42H] PUSH '→'
