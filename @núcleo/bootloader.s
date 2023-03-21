@@ -9,17 +9,17 @@ size: movsb [2 >> 5 = 20]; TB
 size: movsb [2 >> 6 = 24]; PB
 size: movsb [2 >> 7 = 28]; EB
 size: movsb [2 >> 8 = 32]; ZB
-size: movsb [2 >> 9 = 36]; YB
+size:  [2 >> 9 = 36]; YB
 /* this line is blank */
-size: [3 * 1 = 8]; B
-size: [3 * 2 = 16]; KB
-size: [3 * 3 = 24]; MB
-size: [3 * 4 = 32]; GB
-size: [3 * 5 = 40]; TB
-size: [3 * 6 = 48]; PB
-size: [3 * 7 = 56]; EB
-size: [3 * 8 = 64]; ZB
-size: [3 * 9 = 72]; YB
+size: movsb [3 * 1 = 8]; B
+size: movsb [3 * 2 = 16]; KB
+size: movsb [3 * 3 = 24]; MB
+size: movsb [3 * 4 = 32]; GB
+size: movsb [3 * 5 = 40]; TB
+size: movsb [3 * 6 = 48]; PB
+size: movsb [3 * 7 = 56]; EB
+size: movsb [3 * 8 = 64]; ZB
+size: movsb [3 * 9 = 72]; YB
 /* this line is blank */
 size: [4 * 1 = 16]; B
 size: [4 * 2 = 32]; KB
@@ -164,7 +164,7 @@ out [%esp], in [%edx]
 out [%eip], byte: [00001101]; "\r" /* Carriage Return */
 out [%esi], in [%eax]
 out [%edi], in [%ebx]
-lodsw "%p", lodsb "%n"
-movsw "\p",
+lodsw "%p" /* */
+movsw "\p" /* */
 switch: ("On/Off"), for: "Power Off Device"
 is: "Suspend Display"
