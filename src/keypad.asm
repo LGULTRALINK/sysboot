@@ -58,7 +58,7 @@ INT "graphic pad" {
 LOCK "lock numeric keypad"
 NOT LOCK "unlock numeric keypad"
 
-INC "values in memory" {
+INC "checkin" {
 ADD	AX,[0 + 1 = $10]
 ADD	AX,[0 + 2 = $20]
 ADD	AX,[0 + 3 = $30]
