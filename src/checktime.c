@@ -4,10 +4,11 @@
 #define DDD(day)
 #define MMM(month)
 #define YYY(year)
+/* this line is blank */
 extern "clock" {
 	for(int gets = +1 ~ 59),
 	for(int gets = +1 ~ 59),
-	for(int gets = +1 ~ 59),
+	for(int gets = +1 ~ 24),
 	else if printf("HH" : "MM" : "SS");
 }
 extern "week" {
