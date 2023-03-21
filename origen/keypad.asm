@@ -1,4 +1,4 @@
-INT "control pads" {
+INT "control pad" {
 [00H] PUSH '␀'; Null
 [01H] PUSH '␁'; Start of Header
 [02H] PUSH '␂'; Start of Text
@@ -45,7 +45,7 @@ INT "numeric pad" {
 [29H] PUSH '8'; Eight
 [2AH] PUSH '9'; Nine
 }
-INT "graphic pads" {
+INT "graphic pad" {
 [2BH] PUSH '▀'; Upper half block
 [2CH] PUSH '▀'; Lower half block
 [2DH] PUSH '█'; Full block
