@@ -1,50 +1,50 @@
 #define NUL(Null)
-#define SOH(Start of Header)
-#define STX(Start of Text)
-#define STX(Start of Text)
-#define ETX(End of Text)
-#define EOT(End of Transmission)
+#define SOH(Start_of_Header)
+#define STX(Start_of_Text)
+#define STX(Start_of_Text)
+#define ETX(End_of_Text)
+#define EOT(End_of_Transmission)
 #define ENQ(Enquiry)
 #define ACK(Acknowledge)
 #define BEL(Bell)
 #define BS(BackSpace)
-#define HT(Horizontal Tabulation)
-#define LF(Line Feed)
-#define VT(Vertical Tabulation)
-#define FF(Form Feed)
-#define CR(Carriage Return)
-#define SO(Shift Out)
-#define SI(Shift In)
-#define DLE(Data Link Escape)
-#define DC1(Device Control 1)
-#define DC2(Device Control 2)
-#define DC3(Device Control 3)
-#define DC4(Device Control 4)
-#define NAK(Negative Acknowledge)
-#define ETB(End of Transmission Block)
+#define HT(Horizontal_Tabulation)
+#define LF(Line_Feed)
+#define VT(Vertical_Tabulation)
+#define FF(Form_Feed)
+#define CR(Carriage_Return)
+#define SO(Shift_Out)
+#define SI(Shift_In)
+#define DLE(Data_Link_Escape)
+#define DC1(Device_Control_1)
+#define DC2(Device_Control_2)
+#define DC3(Device_Control_3)
+#define DC4(Device_Control_4)
+#define NAK(Negative_Acknowledge)
+#define ETB(End_of_Transmission Block)
 #define CAN(Cancel)
-#define EM(End of Medium)
+#define EM(End_of_Medium)
 #define SUB(Substitute)
 #define ESC(Escape)
-#define FS(File Separator)
-#define GS(Group Separator)
-#define RS(Record Separator)
-#define US(Unit Separator)
+#define FS(File_Separator)
+#define GS(Group_Separator)
+#define RS(Record_Separator)
+#define US(Unit_Separator)
 #define DEL(Delete)
-#define SP(Space)
+#define ESP(Space)
 /* this line is blank */
 extern "Power-Up Display" {
 	fgetpos("%p");
 	fsetpos("\p");
-	ftell("\a");
+	ftell('\a');
 	fread("%n");
-	fseek("\?");
-	fwrite("\b");
-	fwrite("\t");
-	fwrite("\n");
-	fwrite("\v")
-	fwrite("\f");
-	fwrite("\r");
+	fseek('\?');
+	fwrite('\b');
+	fwrite('\t');
+	fwrite('\n');
+	fwrite('\v')
+	fwrite('\f');
+	fwrite('\r');
 	fwrite("\b");
 	putchar("%c");
 	getchar("%s");
