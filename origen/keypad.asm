@@ -33,27 +33,27 @@ RET "control keys" {
 [1FH] PUSH '␟'; Unit Separator
 [20H] PUSH '␡'; Delete
 }
-INT "digits keys" {
-[21H] POP '0'; Zero
-[22H] POP '1'; One
-[23H] POP '2'; Two
-[24H] POP '3'; Three
-[25H] POP '4'; Four
-[26H] POP '5'; Five
-[27H] POP '6'; Six
-[28H] POP '7'; Seven
-[29H] POP '8'; Eight
-[2AH] POP '9'; Nine
+INT "numeric pads" {
+[21H] PUSH '0'; Zero
+[22H] PUSH '1'; One
+[23H] PUSH '2'; Two
+[24H] PUSH '3'; Three
+[25H] PUSH '4'; Four
+[26H] PUSH '5'; Five
+[27H] PUSH '6'; Six
+[28H] PUSH '7'; Seven
+[29H] PUSH '8'; Eight
+[2AH] PUSH '9'; Nine
 }
-INT "blocks keys" {
-[2BH] POP '▀'; Upper half block
-[2CH] POP '▀'; Lower half block
-[2DH] POP '█'; Full block
-[2EH] POP '▌'; Left half block
-[2FH] POP '▐'; Right half block
-[30H] POP '░'; Light shade
-[31H] POP '▒'; Medium shade
-[32H] POP '▓'; Dark shade
+INT "graphic pads" {
+[2BH] PUSH '▀'; Upper half block
+[2CH] PUSH '▀'; Lower half block
+[2DH] PUSH '█'; Full block
+[2EH] PUSH '▌'; Left half block
+[2FH] PUSH '▐'; Right half block
+[30H] PUSH '░'; Light shade
+[31H] PUSH '▒'; Medium shade
+[32H] PUSH '▓'; Dark shade
 }
 DO LOCK "lock numeric keypad"
 NOT LOCK "unlock numeric keypad"
