@@ -1,5 +1,5 @@
 RET {
-[00H] PUSH '␀'
+[00H] PUSH '␀'; null
 [01H] PUSH '␁'
 [02H] PUSH '␂'
 [03H] PUSH '␃'
