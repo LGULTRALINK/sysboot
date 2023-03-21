@@ -20,7 +20,7 @@ extern "week" {
 	int(5):: typedef "Thursday",
 	int(6):: typedef "Friday",
 	int(7):: typedef "Saturday",
-	while scanf("DDD" == int gets[+1 ~ 7]);
+	do while scanf("DDD" == int gets[+1 ~ 7]);
 }
 extern "months" {
 	int(0):: typedef NULL
@@ -36,7 +36,7 @@ extern "months" {
 	int(10):: typedef "October",
 	int(11):: typedef "November",
 	int(12):: typedef "December",
-	while scanf("MMM" == int gets[+1 ~ 12]),
-	while scanf("YYY" == int gets[+1 ~ ?]),
+	do while scanf("MMM" == int gets[+1 ~ 12]),
+	do while scanf("YYY" == int gets[+1 ~ ?]),
 	else if printf("DDD" / "MMM" / "YYY");
 }
