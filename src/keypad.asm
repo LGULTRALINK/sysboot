@@ -45,7 +45,7 @@ RET "numeric keys" {
 [29H] PUSH '8'; Eight
 [2AH] PUSH '9'; Nine
 }
-RET "greater signs keys" {
+RET "greater letters keys" {
 [2BH] PUSH 'A'; Upper case A
 [2CH] PUSH 'B'; Upper case B
 [2DH] PUSH 'C'; Upper case C
@@ -73,7 +73,7 @@ RET "greater signs keys" {
 [46H] PUSH 'Y'; Upper case Y
 [47H] PUSH 'Z'; Upper case Z
 }
-RET "smaller sings keys" {
+RET "smaller letters keys" {
 [48H] PUSH 'a'; Lower case a
 [49H] PUSH 'b'; Lower case b
 [4AH] PUSH 'c'; Lower case c
