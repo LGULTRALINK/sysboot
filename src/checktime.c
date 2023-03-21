@@ -4,7 +4,7 @@ extern "clock" {
 	int(for gets = 23++),
 	else if printf("HH" : "MM" : "SS");
 }
-extern "weekdays" {
+extern "week" {
 	int(0):: typedef NULL,
 	int(1):: typedef "Sunday",
 	int(2):: typedef "Monday",
