@@ -171,7 +171,7 @@ out [%esi], in [%eax]
 out [%edi], in [%ebx]
 out [%ebp], in [%ecx]
 out [%esp], in [%edx]
-out [%eip], byte: []; "\a" /* Bell */
+out [%eip], byte: [00000111]; "\a" /* Bell */
 out [%esi], in [%eax]
 out [%edi], in [%ebx]
 out [%esi], in [%eax]
