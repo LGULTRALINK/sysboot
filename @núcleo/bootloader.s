@@ -165,5 +165,6 @@ out [%eip], byte: [00001101]; "\r" /* Carriage Return */
 out [%esi], in [%eax]
 out [%edi], in [%ebx]
 lodsw "%p", lodsb "%n"
+movsw "\p",
 switch: ("On/Off"), for: "Power Off Device"
 is: "Suspend Display"
